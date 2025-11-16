@@ -10,6 +10,10 @@
 *.net
 
 # Autorouter files (exported from Pcbnew)
-.dsn
+*.dsn
+*.ses
 
 export/RPi_Hat\.zip
+
+rescue-backup
+RPi_Hat-backups
