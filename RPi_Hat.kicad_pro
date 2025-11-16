@@ -48,11 +48,28 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.508
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "items_not_allowed|26183954|31859372|9acefd41-0a21-4d60-9473-5bdb1b4ba7d6|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|26995000|81575000|c46ccba1-a15a-4f3d-a8d8-d580732a12ab|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|84995000|32575000|e765ce9d-6274-44d5-8a23-733c8c560ed6|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "items_not_allowed|84995000|81575000|a4061cc1-d8d9-4479-99a1-c02263917293|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
