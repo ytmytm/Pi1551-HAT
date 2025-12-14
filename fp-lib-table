@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "IIC_OLED")(type "KiCad")(uri "$(KIPRJMOD)/IIC_OLED.pretty")(options "")(descr ""))
   (lib (name "RPi_Hat")(type "KiCad")(uri "$(KIPRJMOD)/RPi_Hat.pretty")(options "")(descr ""))
+  (lib (name "Conn_DIN_round")(type "KiCad")(uri "${KIPRJMOD}/Conn_DIN_round.pretty")(options "")(descr ""))
 )
