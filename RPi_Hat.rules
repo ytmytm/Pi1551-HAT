@@ -8,10 +8,10 @@
     (autoroute on)
     (postroute on)
     (vias on)
-    (via_costs 50)
-    (plane_via_costs 5)
+    (via_costs 1)
+    (plane_via_costs 1)
     (start_ripup_costs 100)
-    (start_pass_no 267)
+    (start_pass_no 1606)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -29,8 +29,9 @@
     (width 250.0)
     (clearance 200.0)
     (clearance 125.0 (type smd_to_turn_gap))
-    (clearance 50.0 (type smd))
+    (clearance 200.0 (type smd))
     (clearance 200.0 (type "kicad_default"))
+    (clearance 200.0 (type kicad))
   )
   (padstack "Via[0-1]_600:400_um"
     (shape
@@ -66,9 +67,10 @@
   (class "kicad_default"
     GND "Net-(D1-K)" "/RPI_SND" "/RPI_LED" "/I2C_SCL" "/I2C_SDA" /DIO7 /DIO4
     /STATUS1 /DIO3 /DIO5 +3V3 /~{RESET} /DIO1 /DEV "/IN_SW3"
-    "/IN_SW1" /DIO8 "/IN_SW5" "unconnected-(J1-5V-Pad2)" "unconnected-(J1-BCM26-Pad37)" /STATUS0 "/IN_SW2" /DIO2
-    /ACK "/IN_SW4" /DIO6 /DAV "unconnected-(J1-BCM19_MISO-Pad35)" "unconnected-(J1-5V-Pad4)" "unconnected-(J1-BCM6-Pad31)" "unconnected-(J1-BCM0_ID_SD-Pad27)"
-    "unconnected-(J1-BCM1_ID_SC-Pad28)"
+    "/IN_SW1" /DIO8 "/IN_SW5" "unconnected-(J1-5V-Pad2)" "/~{RESET_3V3}" /STATUS0 "/IN_SW2" /DIO2
+    /ACK "/IN_SW4" /DIO6 /DAV "/TAP_READ" "unconnected-(J1-5V-Pad4)" "/TAP_MOTOR" "/TAP_SENSE"
+    "unconnected-(J1-BCM1_ID_SC-Pad28)" "/TAP_WRITE" "/CAS_WRITE" "/CAS_MOTOR" "/CAS_SENSE" "/CAS_READ" "/VCC_5V" "Net-(JP1-A)"
+    "Net-(JP2-A)" "Net-(Q1-B)" "Net-(Q2-B)" "Net-(Q3-B)" "Net-(Q4-B)"
     (clearance_class "kicad_default")
     (via_rule "kicad_default")
     (rule
