@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Pi1551 Hat")
-		(date "2025-12-07")
+		(date "2025-12-15")
 		(rev "2")
 		(company "YTM Enterprises")
 		(comment 1 "Maciej Witkowiak <ytm@elysium.pl>")
@@ -1829,6 +1829,293 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x07"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x07"
+				(at 0 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x07_1_1"
+				(rectangle
+					(start -1.27 8.89)
+					(end 1.27 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 7.747)
+					(end 0 7.493)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 7.62 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8426,6 +8713,16 @@
 		)
 		(uuid "a60e0984-9aca-482c-a0f6-176e05f10084")
 	)
+	(text "(order most convenient for a piece of\n ribbon cable soldered to a standalone\n Mini-Din 7 plug - around the perimeter)"
+		(exclude_from_sim no)
+		(at 195.326 148.59 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+		)
+		(uuid "b47cf357-f39e-44c0-bcd4-d8e7619050ec")
+	)
 	(text "E"
 		(exclude_from_sim no)
 		(at 194.056 68.072 0)
@@ -8454,6 +8751,12 @@
 		(uuid "00a4ffae-473c-4d71-baf3-0385fe8516a6")
 	)
 	(junction
+		(at 256.54 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "038660c5-ce0d-4d09-9c14-c294fb557e9b")
+	)
+	(junction
 		(at 151.13 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -8470,12 +8773,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24f184a6-16a4-45d1-af0d-aac57b2e9bd6")
-	)
-	(junction
-		(at 256.54 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2d3dd17d-4f19-4bb2-b8e3-c89a8bd34173")
 	)
 	(junction
 		(at 19.05 77.47)
@@ -8506,12 +8803,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41082f76-84b5-4e13-924a-831ef090a33e")
-	)
-	(junction
-		(at 256.54 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5d9ade53-d6b0-465d-b5e6-2eccec6497e5")
 	)
 	(junction
 		(at 95.25 52.07)
@@ -8556,16 +8847,16 @@
 		(uuid "7177698f-51c7-4697-97a6-2e25cac929ad")
 	)
 	(junction
-		(at 256.54 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "74d1d65c-13e1-449e-8bd8-0b1040e6ae81")
-	)
-	(junction
 		(at 22.86 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "860a1b49-7c5e-49ce-95ba-82d4621fba50")
+	)
+	(junction
+		(at 256.54 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9506095c-0a74-4cbb-b618-09728beb232a")
 	)
 	(junction
 		(at 95.25 69.85)
@@ -8580,16 +8871,22 @@
 		(uuid "b0021c65-6c62-484d-b64e-587cae936191")
 	)
 	(junction
-		(at 256.54 101.6)
+		(at 256.54 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c667799b-c826-4d97-8f28-d2bcb8c55dff")
+		(uuid "c2187430-3b55-4658-aca1-3c3396849cf8")
 	)
 	(junction
 		(at 41.91 124.46)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d9de1781-d972-4777-82bb-bd8644469e16")
+	)
+	(junction
+		(at 256.54 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e175a0a5-bd5c-48d7-ae0e-41d0591e21d9")
 	)
 	(junction
 		(at 147.32 156.21)
@@ -9679,6 +9976,16 @@
 		)
 		(uuid "0406eb7c-7bb9-45a6-989e-54e452ac6c0c")
 	)
+	(label "GND"
+		(at 191.77 134.62 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "06ef945e-4831-438a-a614-30bfa314cbd2")
+	)
 	(label "DEV"
 		(at 31.75 54.61 180)
 		(effects
@@ -9708,6 +10015,16 @@
 			(justify right bottom)
 		)
 		(uuid "1ac25e1d-0a57-4977-b414-1dd13c1162ed")
+	)
+	(label "CAS_READ"
+		(at 189.23 134.62 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1b1c1f24-9920-42f1-8b22-5f2c6d8a6b77")
 	)
 	(label "GND"
 		(at 201.93 107.95 0)
@@ -9799,6 +10116,16 @@
 		)
 		(uuid "41730695-242d-4ca6-95bc-6766488b46e9")
 	)
+	(label "CAS_SENSE"
+		(at 194.31 134.62 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "41d8ff6c-b208-49b3-82a1-4c29167debb6")
+	)
 	(label "VCC_5V"
 		(at 256.54 45.72 0)
 		(effects
@@ -9808,6 +10135,16 @@
 			(justify left bottom)
 		)
 		(uuid "42f67753-a226-4597-9223-d955c9240ad9")
+	)
+	(label "CAS_WRITE"
+		(at 196.85 134.62 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4444e342-56dd-4719-9f29-dd302ab9345a")
 	)
 	(label "~{RESET_3V3}"
 		(at 31.75 57.15 180)
@@ -9859,6 +10196,16 @@
 		)
 		(uuid "51275c4a-5558-4005-8469-222c145515f4")
 	)
+	(label "VCC_5V"
+		(at 186.69 134.62 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5adc0a9f-3104-49ea-a025-fcf85fb5c4e2")
+	)
 	(label "IN_SW5"
 		(at 31.75 64.77 180)
 		(effects
@@ -9908,6 +10255,16 @@
 			(justify right bottom)
 		)
 		(uuid "612cb484-af1c-44f1-8517-3f30149bf402")
+	)
+	(label "GND"
+		(at 201.93 134.62 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "61457b3d-0155-47ba-87b2-7d9667324875")
 	)
 	(label "DIO3"
 		(at 80.01 41.91 0)
@@ -10178,6 +10535,16 @@
 			(justify right bottom)
 		)
 		(uuid "a29a513c-c30f-4a9b-8c6c-94b42965b123")
+	)
+	(label "CAS_MOTOR"
+		(at 199.39 134.62 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a70daef1-c130-49d1-9817-746e9f504639")
 	)
 	(label "I2C_SCL"
 		(at 154.94 156.21 0)
@@ -10924,7 +11291,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_THT:LED_D5.0mm"
+		(property "Footprint" "LED_THT:LED_D3.0mm"
 			(at 85.09 147.32 0)
 			(effects
 				(font
@@ -10970,73 +11337,6 @@
 			(project ""
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 95.25 147.32 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005b16d6a6")
-		(property "Reference" "R1"
-			(at 95.25 149.352 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220"
-			(at 95.25 147.32 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 95.25 145.542 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 95.25 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 95.25 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "008df411-481d-4ba9-9fa4-523b6fbdb68d")
-		)
-		(pin "2"
-			(uuid "1cce51b7-aabd-41be-8384-f96129b7b462")
-		)
-		(instances
-			(project ""
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -11257,7 +11557,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 177.8 144.78 0)
+		(at 180.34 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11266,7 +11566,7 @@
 		(fields_autoplaced yes)
 		(uuid "017530ff-5caf-47e5-b47c-0b9c39141e70")
 		(property "Reference" "H2"
-			(at 180.34 143.5099 0)
+			(at 182.88 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11275,7 +11575,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 180.34 146.0499 0)
+			(at 182.88 162.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11284,7 +11584,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965"
-			(at 177.8 144.78 0)
+			(at 180.34 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11293,7 +11593,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 144.78 0)
+			(at 180.34 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11302,7 +11602,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 177.8 144.78 0)
+			(at 180.34 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11314,179 +11614,6 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 196.85 52.07 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "02c98713-42b6-4e93-a64c-b87b8aec9b73")
-		(property "Reference" "R4"
-			(at 199.39 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 199.39 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 198.628 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 196.85 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 196.85 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9ef1894b-4eab-4fa2-9698-5449f3ac0b59")
-		)
-		(pin "2"
-			(uuid "c3652854-6ec1-43f6-b2f1-be79b77defb8")
-		)
-		(instances
-			(project "RPi_Hat"
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:2N3904")
-		(at 254 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "073db985-a1e3-4dd7-9431-1294aa91e916")
-		(property "Reference" "Q2"
-			(at 259.08 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NPN: 2n3904"
-			(at 259.08 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 259.08 65.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
-			(at 254 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
-			(at 254 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NPN"
-			(at 254 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "GUMMELPOON"
-			(at 254 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 254 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "36f2e5e3-235b-4f9b-b834-5b22b2cdb352")
-		)
-		(pin "1"
-			(uuid "3d82831a-3af0-44a8-a291-0454b5a5d7be")
-		)
-		(pin "3"
-			(uuid "bc98cf79-bcde-4861-8496-10c3e99f46a3")
-		)
-		(instances
-			(project "RPi_Hat"
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -11553,6 +11680,196 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 242.57 147.32 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ad2366f-4693-4415-a5ba-8365fff27cb6")
+		(property "Reference" "R7"
+			(at 242.57 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 242.57 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 242.57 145.542 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 242.57 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 242.57 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 242.57 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 242.57 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fae6cb89-f9dd-4f6d-b79f-2ecbab85312e")
+		)
+		(pin "2"
+			(uuid "422595e4-02cf-4fdd-adf8-5320b1adb07d")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 242.57 63.5 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "141db66d-d920-4be7-8515-b5671d4467a0")
+		(property "Reference" "R5"
+			(at 242.57 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 242.57 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 242.57 61.722 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 242.57 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 242.57 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 242.57 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 242.57 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef855cf2-e3c9-417c-a27e-b71caf970ca8")
+		)
+		(pin "2"
+			(uuid "cc30bcea-2252-440e-865a-54ffe5f527f7")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -11703,6 +12020,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x07")
+		(at 194.31 129.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2926bad7-f049-4836-88c5-d8cb5366ed39")
+		(property "Reference" "J5"
+			(at 194.31 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x07"
+			(at 194.31 125.73 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal"
+			(at 194.31 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 194.31 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "11141c84-6f95-49c5-b8e2-80b2e89a7afa")
+		)
+		(pin "1"
+			(uuid "94179f5b-15b0-4406-9ee8-528ffde5dcc7")
+		)
+		(pin "4"
+			(uuid "3e4f73c2-1255-4a2a-842b-86c1d02292dc")
+		)
+		(pin "2"
+			(uuid "691e603c-7f05-420e-9e0c-1f5be82f601f")
+		)
+		(pin "7"
+			(uuid "3f99b497-d242-4ea4-a906-8141855d012f")
+		)
+		(pin "3"
+			(uuid "8c95a017-8a57-4dfb-8a7c-e7de8968528c")
+		)
+		(pin "5"
+			(uuid "4de6e221-5cda-4cd4-a37d-8b989506fe13")
+		)
+		(instances
+			(project ""
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 109.22 114.3 0)
 		(unit 1)
@@ -11728,7 +12129,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_A-405_P7.62mm_Horizontal"
+		(property "Footprint" "Diode_SMD:D_SOD-123"
 			(at 109.22 114.3 0)
 			(effects
 				(font
@@ -11755,6 +12156,33 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C7502705"
+			(at 109.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "BAT54W"
+			(at 109.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/hongjiacheng-BAT54W/C7502705"
+			(at 109.22 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "66d47cd4-b1e5-48ea-b901-8b525f1a4ae3")
 		)
@@ -11772,32 +12200,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 242.57 63.5 270)
+		(at 118.11 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "32d1f595-6b94-4034-8519-312f82594308")
-		(property "Reference" "R5"
-			(at 242.57 57.15 90)
+		(uuid "317e8ccf-7e0d-4497-8550-52585fa82af9")
+		(property "Reference" "R2"
+			(at 120.65 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 242.57 59.69 90)
+			(at 120.65 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 242.57 61.722 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 116.332 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11806,7 +12236,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 242.57 63.5 0)
+			(at 118.11 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11815,7 +12245,34 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 242.57 63.5 0)
+			(at 118.11 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 118.11 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 118.11 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 118.11 102.87 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11824,15 +12281,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ec869299-6164-478a-9017-fb0c6ca1dbf2")
+			(uuid "a5f9ec58-fb15-4691-bdc6-7da1817fc83f")
 		)
 		(pin "2"
-			(uuid "cea9534e-5ee1-4f48-8684-71f8b89c20e6")
+			(uuid "8e5ca1fa-4104-4f06-8e9d-20f01a3a25d1")
 		)
 		(instances
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "R5")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -11981,32 +12438,34 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 242.57 147.32 270)
+		(at 256.54 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4088bc25-0e03-45a3-8a47-d9228cc1d364")
-		(property "Reference" "R7"
-			(at 242.57 140.97 90)
+		(uuid "3cf279fe-c34a-42e7-9431-46455b8c21cb")
+		(property "Reference" "R10"
+			(at 259.08 134.6199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 242.57 143.51 90)
+			(at 259.08 137.1599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 242.57 145.542 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 254.762 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12015,7 +12474,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 242.57 147.32 0)
+			(at 256.54 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12024,7 +12483,34 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 242.57 147.32 0)
+			(at 256.54 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 256.54 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 256.54 135.89 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 256.54 135.89 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12033,15 +12519,110 @@
 			)
 		)
 		(pin "1"
-			(uuid "e8c52e16-3cff-413c-9074-12774b1a08ca")
+			(uuid "417dae05-187d-42ed-9fba-93c42d2d3a0a")
 		)
 		(pin "2"
-			(uuid "e459b368-e89d-4536-9513-fe6e4a76a364")
+			(uuid "320ae034-506e-4d9c-b93c-0756029a6b4e")
 		)
 		(instances
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "R7")
+					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 95.25 147.32 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40ef5a2b-b508-4676-bcf6-dbed561d53a6")
+		(property "Reference" "R1"
+			(at 95.25 140.97 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220"
+			(at 95.25 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 95.25 149.098 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706531329466368"
+			(at 95.25 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 95.25 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C17557"
+			(at 95.25 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "0805W8F2200T5E"
+			(at 95.25 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/18245-0805W8F2200T5E/C17557"
+			(at 95.25 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9be69fdd-4d1d-478e-87ec-b0891eca945b")
+		)
+		(pin "2"
+			(uuid "6be0072c-399c-4c44-a768-1940805814a7")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -12418,6 +12999,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:2N3904")
+		(at 254 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d5c71c0-dbf3-4fab-95a5-3f9d201eb194")
+		(property "Reference" "Q3"
+			(at 259.08 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NPN: 2n3904"
+			(at 259.08 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+			(at 259.08 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586173324804706304"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C18536"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "2N3904S-RTK/PS"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/KECSemicon-2N3904S_RTKPS/C18536"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bfea331d-0232-45b3-840f-b0c542dac592")
+		)
+		(pin "1"
+			(uuid "6f3e54f1-739d-4611-a1ae-2a4962a13d07")
+		)
+		(pin "3"
+			(uuid "06210a8b-5e33-4eaf-a4dc-027e274a4592")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 123.825 152.4 0)
 		(unit 1)
@@ -12478,6 +13162,109 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:2N3904")
+		(at 254 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "725afe5e-4d89-4ee7-b19e-b5cd5f324ffc")
+		(property "Reference" "Q4"
+			(at 259.08 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NPN: 2n3904"
+			(at 259.08 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+			(at 259.08 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586173324804706304"
+			(at 254 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
+			(at 254 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C18536"
+			(at 254 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "2N3904S-RTK/PS"
+			(at 254 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/KECSemicon-2N3904S_RTKPS/C18536"
+			(at 254 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d7805f80-6447-4541-8680-797fb9ff8a31")
+		)
+		(pin "1"
+			(uuid "16c50770-bdbd-4675-9693-2c93de1ad0e8")
+		)
+		(pin "3"
+			(uuid "b721697d-7d7e-413b-9dc3-5935ddcbba9e")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -12634,6 +13421,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 242.57 106.68 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8106b422-ba22-4e8c-9638-14a1f6e51a45")
+		(property "Reference" "R6"
+			(at 242.57 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 242.57 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 242.57 104.902 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 242.57 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 242.57 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 242.57 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 242.57 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40f1c017-30ef-4b95-b451-2176a893b50c")
+		)
+		(pin "2"
+			(uuid "6b58c22b-f793-472a-aa62-803b6081dbab")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Mini-DIN-7")
 		(at 194.31 105.41 0)
 		(unit 1)
@@ -12659,7 +13541,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical"
+		(property "Footprint" "Conn_DIN_round:Mini_DIN_round_7_canned"
 			(at 194.056 105.664 90)
 			(effects
 				(font
@@ -12668,7 +13550,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf"
+		(property "Datasheet" ""
 			(at 194.056 105.664 90)
 			(effects
 				(font
@@ -12868,7 +13750,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 177.8 160.02 0)
+		(at 199.39 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -12877,7 +13759,7 @@
 		(fields_autoplaced yes)
 		(uuid "9188ad24-6ef9-41a7-912b-a5f6499bdebb")
 		(property "Reference" "H4"
-			(at 180.34 158.7499 0)
+			(at 201.93 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12886,7 +13768,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 180.34 161.2899 0)
+			(at 201.93 162.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12895,7 +13777,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965"
-			(at 177.8 160.02 0)
+			(at 199.39 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12904,7 +13786,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 160.02 0)
+			(at 199.39 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12913,7 +13795,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 177.8 160.02 0)
+			(at 199.39 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12997,35 +13879,56 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 256.54 135.89 180)
+		(lib_id "Transistor_BJT:2N3904")
+		(at 254 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a2c0730a-d6e2-4a42-85ba-6e754e613886")
-		(property "Reference" "R10"
-			(at 259.08 134.6199 0)
+		(uuid "adc862cb-7431-40ca-9ea8-3ad53d1593e7")
+		(property "Reference" "Q2"
+			(at 259.08 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 259.08 137.1599 0)
+		(property "Value" "NPN: 2n3904"
+			(at 259.08 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 258.318 135.89 90)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+			(at 259.08 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586173324804706304"
+			(at 254 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13033,8 +13936,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 256.54 135.89 0)
+		(property "JLCPCB Part #" "C18536"
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13042,8 +13945,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 256.54 135.89 0)
+		(property "MFR.Part #" "2N3904S-RTK/PS"
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13051,86 +13954,28 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "4244e961-50bd-4bef-ac5b-0c2b68cd304d")
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/KECSemicon-2N3904S_RTKPS/C18536"
+			(at 254 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "9de9d682-a859-4fc2-aea4-05c8f63af816")
+			(uuid "df39e7e9-5284-4a3f-9a69-407e7b2b3ecf")
+		)
+		(pin "1"
+			(uuid "0273c311-0094-4390-befc-27ac7d599aa6")
+		)
+		(pin "3"
+			(uuid "c4bab468-1459-425e-8f45-e642dd0c33b6")
 		)
 		(instances
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 118.11 102.87 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4423eda-23a5-4641-8df5-b6c337f466e8")
-		(property "Reference" "R2"
-			(at 120.65 101.5999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 120.65 104.1399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 119.888 102.87 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 118.11 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 118.11 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "71c2f74d-eb72-4d2a-ae4e-52f3c51f00be")
-		)
-		(pin "2"
-			(uuid "a1d840b9-a8bc-4891-afb5-11cc857d902c")
-		)
-		(instances
-			(project "RPi_Hat"
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "R2")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -13138,7 +13983,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 177.8 152.4 0)
+		(at 199.39 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -13147,7 +13992,7 @@
 		(fields_autoplaced yes)
 		(uuid "b49754db-9923-4514-834a-44c9610663e4")
 		(property "Reference" "H3"
-			(at 180.34 151.1299 0)
+			(at 201.93 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13156,7 +14001,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 180.34 153.6699 0)
+			(at 201.93 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13165,7 +14010,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965"
-			(at 177.8 152.4 0)
+			(at 199.39 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13174,7 +14019,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 152.4 0)
+			(at 199.39 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13183,7 +14028,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 177.8 152.4 0)
+			(at 199.39 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13202,7 +14047,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 177.8 137.16 0)
+		(at 180.34 154.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -13211,7 +14056,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd271b1d-8399-42e3-8584-750ef2ecfa55")
 		(property "Reference" "H1"
-			(at 180.34 135.8899 0)
+			(at 182.88 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13220,7 +14065,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 180.34 138.4299 0)
+			(at 182.88 156.2099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13229,7 +14074,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965"
-			(at 177.8 137.16 0)
+			(at 180.34 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13238,7 +14083,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 177.8 137.16 0)
+			(at 180.34 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13247,7 +14092,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 177.8 137.16 0)
+			(at 180.34 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13525,135 +14370,35 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:2N3904")
-		(at 254 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "c3b36d9c-76df-4398-bcd5-126ba9da6081")
-		(property "Reference" "Q4"
-			(at 243.332 152.146 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NPN: 2n3904"
-			(at 243.332 154.686 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 259.08 149.225 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
-			(at 254 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
-			(at 254 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NPN"
-			(at 254 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "GUMMELPOON"
-			(at 254 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 254 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9ce1d0ce-c706-41d3-8d63-a32a44dbb594")
-		)
-		(pin "1"
-			(uuid "4a1a008f-a805-4177-bf8e-6fd9aabed270")
-		)
-		(pin "3"
-			(uuid "8018fb07-e17c-41a3-87dc-b5d45c0f7ab1")
-		)
-		(instances
-			(project ""
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "Q4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 242.57 106.68 270)
+		(at 196.85 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ccedfe91-d202-44d2-b4f5-93f306cabe9b")
-		(property "Reference" "R6"
-			(at 242.57 100.33 90)
+		(uuid "c3ccc9ac-9e55-42bc-b18c-84261a45d487")
+		(property "Reference" "R4"
+			(at 199.39 50.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 242.57 102.87 90)
+			(at 199.39 53.3399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 242.57 104.902 90)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 195.072 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13662,7 +14407,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 242.57 106.68 0)
+			(at 196.85 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13671,7 +14416,34 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 242.57 106.68 0)
+			(at 196.85 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 196.85 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 196.85 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 196.85 52.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13680,188 +14452,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "be5e96d2-6a88-4950-bb84-846dc2a9d0a5")
+			(uuid "0650cac5-2bcd-49d7-8a73-19722eed2854")
 		)
 		(pin "2"
-			(uuid "45bd98a4-7b1e-4581-9911-7792609f76df")
+			(uuid "6b26a6d2-aaf9-4cdd-ade1-b6a1e1681c5b")
 		)
 		(instances
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 256.54 52.07 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d3f07582-396d-445c-a8b9-365180ded2b6")
-		(property "Reference" "R8"
-			(at 259.08 50.7999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 259.08 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 258.318 52.07 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 256.54 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 256.54 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5ab0cc21-9f65-43f6-8fb5-2bf627647ea5")
-		)
-		(pin "2"
-			(uuid "e235be1b-ce40-48c8-bf64-6334a3bdd7dc")
-		)
-		(instances
-			(project "RPi_Hat"
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:2N3904")
-		(at 254 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d7b6e8a0-6367-47c7-b6e0-94e67975d8c1")
-		(property "Reference" "Q3"
-			(at 259.08 105.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NPN: 2n3904"
-			(at 259.08 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
-			(at 259.08 108.585 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
-			(at 254 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
-			(at 254 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "NPN"
-			(at 254 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Type" "GUMMELPOON"
-			(at 254 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 254 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "abbb344e-e496-4037-b101-f8e1bc8fefab")
-		)
-		(pin "1"
-			(uuid "71b4aae1-19f4-4aad-b169-9bb0629e74a5")
-		)
-		(pin "3"
-			(uuid "c8ba56b8-8d1a-4308-a5f7-6cced356c81e")
-		)
-		(instances
-			(project "RPi_Hat"
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "Q3")
+					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -13893,7 +14492,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
 			(at 182.88 61.722 90)
 			(effects
 				(font
@@ -13920,6 +14519,33 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 182.88 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 182.88 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 182.88 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "95bafdb4-d871-4eee-ad4f-dd91d446c544")
 		)
@@ -13930,6 +14556,103 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 256.54 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3d67f45-ea38-41b4-83a0-e50dcfc817f8")
+		(property "Reference" "R8"
+			(at 259.08 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 259.08 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 254.762 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 256.54 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 256.54 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 256.54 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 256.54 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 256.54 52.07 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3bd32a07-9ed8-4474-9a57-4f20977ab9a8")
+		)
+		(pin "2"
+			(uuid "f2e3183e-108b-4d2a-bd4c-2a9755977697")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R8")
 					(unit 1)
 				)
 			)
@@ -14002,6 +14725,103 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 256.54 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e6d675a8-1078-4f43-8e2d-2109c16f5814")
+		(property "Reference" "R9"
+			(at 259.08 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 259.08 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 254.762 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 256.54 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 256.54 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 256.54 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 256.54 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 256.54 95.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6dbacc15-20b9-40cf-8796-a9f020b273f4")
+		)
+		(pin "2"
+			(uuid "5e3c5e4e-db91-48ce-8be7-3237944a2ba2")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:2N3904")
 		(at 194.31 63.5 0)
 		(unit 1)
@@ -14029,7 +14849,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
 			(at 199.39 65.405 0)
 			(effects
 				(font
@@ -14040,7 +14860,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586173324804706304"
 			(at 194.31 63.5 0)
 			(effects
 				(font
@@ -14059,7 +14879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "NPN"
+		(property "JLCPCB Part #" "C18536"
 			(at 194.31 63.5 0)
 			(effects
 				(font
@@ -14068,7 +14888,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Type" "GUMMELPOON"
+		(property "MFR.Part #" "2N3904S-RTK/PS"
 			(at 194.31 63.5 0)
 			(effects
 				(font
@@ -14077,7 +14897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/KECSemicon-2N3904S_RTKPS/C18536"
 			(at 194.31 63.5 0)
 			(effects
 				(font
@@ -14240,76 +15060,6 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 256.54 95.25 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f4b90121-eb2d-4805-8952-75dadc854028")
-		(property "Reference" "R9"
-			(at 259.08 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10k"
-			(at 259.08 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 258.318 95.25 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 256.54 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 256.54 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5bd31f77-f260-44bc-8f2e-5f9bbf403f0d")
-		)
-		(pin "2"
-			(uuid "3ab602eb-b9a1-42bc-a821-f923aeb20f33")
-		)
-		(instances
-			(project "RPi_Hat"
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "R9")
 					(unit 1)
 				)
 			)
