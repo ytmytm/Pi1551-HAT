@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Pi1551 Hat")
-		(date "2025-12-15")
-		(rev "2")
+		(date "2026-02-01")
+		(rev "3")
 		(company "YTM Enterprises")
 		(comment 1 "Maciej Witkowiak <ytm@elysium.pl>")
 	)
@@ -8575,7 +8575,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_BJT:2N3904"
+		(symbol "Transistor_BJT:MMBT3904"
 			(pin_names
 				(offset 0)
 				(hide yes)
@@ -8592,7 +8592,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "2N3904"
+			(property "Value" "MMBT3904"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -8601,7 +8601,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -8612,7 +8612,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF"
+			(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8622,7 +8622,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
+			(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8640,7 +8640,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO?92*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -8649,7 +8649,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "2N3904_0_1"
+			(symbol "MMBT3904_0_1"
 				(polyline
 					(pts
 						(xy -2.54 0) (xy 0.635 0)
@@ -8686,7 +8686,7 @@
 					)
 				)
 			)
-			(symbol "2N3904_1_1"
+			(symbol "MMBT3904_1_1"
 				(polyline
 					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
@@ -8733,7 +8733,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8769,7 +8769,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -9007,7 +9007,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "all of these TAP_xxx -> CAS_xxx and CAS_xxx -> TAP_xxx\nconverters reverse the logic levels\nall transistors are NPN:\n2n3904 / BC547 / S8050 / etc."
+	(text "all of these TAP_xxx -> CAS_xxx and CAS_xxx -> TAP_xxx\nconverters reverse the logic levels\nall transistors are NPN:\n2n3904 / BC547 / S8050 / etc.\n\nNote: SMD transistors have different pinouts\nTHT: B on 2 and E on 1 (EBC) (2N3904)\nSMD: B on 1 and E on 2 (BEC) (MMBT3904 also sold as 2n3904)"
 		(exclude_from_sim no)
 		(at 217.932 33.274 0)
 		(effects
@@ -9055,7 +9055,7 @@
 		(at 87.122 194.564 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 		)
 		(uuid "4baa9e06-641b-49a7-8fff-2bbcab68fb93")
@@ -9075,7 +9075,7 @@
 		(at 59.182 192.786 0)
 		(effects
 			(font
-				(size 1.27 1.27)
+				(size 1.016 1.016)
 			)
 		)
 		(uuid "5ba41baa-e419-4785-94eb-88c3ffa5c834")
@@ -9101,6 +9101,17 @@
 		)
 		(uuid "8b7cbf8d-9608-4ef4-8059-e32d21740a4a")
 	)
+	(text "THT LED 3mm or 5mm"
+		(exclude_from_sim no)
+		(at 70.866 140.97 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "a0a513ee-69f6-42b3-9a46-e4706bf59b45")
+	)
 	(text "(image matches looking at the back of C16/+4)"
 		(exclude_from_sim no)
 		(at 195.834 119.888 0)
@@ -9121,6 +9132,17 @@
 		)
 		(uuid "b47cf357-f39e-44c0-bcd4-d8e7619050ec")
 	)
+	(text "Switch BOTH JP3/JP4\nfor VCC/GND/SCL/SDA\nor  GND/VCC/SCL/SDA\n"
+		(exclude_from_sim no)
+		(at 141.224 140.462 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "b7179731-4ae9-4d17-ad6d-43cebe28711d")
+	)
 	(text "E"
 		(exclude_from_sim no)
 		(at 194.056 68.072 0)
@@ -9131,9 +9153,9 @@
 		)
 		(uuid "ed75c47a-7597-401a-b1a1-0b2cc4534a6a")
 	)
-	(text "Required b/c depending on tcbm2sd version\n~{RESET} can be pulled to 5V or 3.3V\nBAT54, BAS40, BAT43, 1n5819"
+	(text "Required b/c depending on tcbm2sd version\n~{RESET} can be pulled to 5V or 3.3V\nuse BAT54, BAS40, BAT43, 1n5819"
 		(exclude_from_sim no)
-		(at 87.122 123.952 0)
+		(at 100.584 120.396 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -9149,13 +9171,13 @@
 		(uuid "00a4ffae-473c-4d71-baf3-0385fe8516a6")
 	)
 	(junction
-		(at 256.54 142.24)
+		(at 196.85 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "038660c5-ce0d-4d09-9c14-c294fb557e9b")
+		(uuid "0e7ba5bb-8c3c-4d31-8137-13578ba83945")
 	)
 	(junction
-		(at 151.13 153.67)
+		(at 153.035 158.115)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "166e791e-502a-4799-8e45-10fa27a0c5bd")
@@ -9185,34 +9207,22 @@
 		(uuid "340b2b32-ece1-49c6-879d-e83f89ac2f38")
 	)
 	(junction
-		(at 196.85 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3a73ef58-078a-43ea-aa4d-9792d6d27b59")
-	)
-	(junction
 		(at 22.86 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3fdc12b9-40f0-4b7d-82a4-0186d54b5201")
 	)
 	(junction
-		(at 120.015 161.29)
+		(at 256.54 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "41082f76-84b5-4e13-924a-831ef090a33e")
+		(uuid "5dce2667-38b1-4188-9443-d9b2e5d18397")
 	)
 	(junction
 		(at 95.25 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "62476c3b-743a-4e7a-ac18-b04204f53395")
-	)
-	(junction
-		(at 123.825 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "65175cf0-510a-40a9-9fa4-0669b616d6ac")
 	)
 	(junction
 		(at 19.05 85.09)
@@ -9245,16 +9255,22 @@
 		(uuid "7177698f-51c7-4697-97a6-2e25cac929ad")
 	)
 	(junction
+		(at 130.81 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c69207d-5163-4662-ac4b-7afdc8c89722")
+	)
+	(junction
 		(at 22.86 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "860a1b49-7c5e-49ce-95ba-82d4621fba50")
 	)
 	(junction
-		(at 256.54 58.42)
+		(at 256.54 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9506095c-0a74-4cbb-b618-09728beb232a")
+		(uuid "8bb3ea4c-1f46-4185-8f69-fecc5f067980")
 	)
 	(junction
 		(at 95.25 69.85)
@@ -9269,10 +9285,10 @@
 		(uuid "b0021c65-6c62-484d-b64e-587cae936191")
 	)
 	(junction
-		(at 256.54 152.4)
+		(at 125.73 163.195)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c2187430-3b55-4658-aca1-3c3396849cf8")
+		(uuid "cfc4b501-ff57-4152-8a84-4dedf9d7ad62")
 	)
 	(junction
 		(at 41.91 124.46)
@@ -9281,16 +9297,28 @@
 		(uuid "d9de1781-d972-4777-82bb-bd8644469e16")
 	)
 	(junction
-		(at 256.54 101.6)
+		(at 256.54 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e175a0a5-bd5c-48d7-ae0e-41d0591e21d9")
+		(uuid "df3ff04e-0627-43b3-a455-f31483b7d0f9")
 	)
 	(junction
-		(at 147.32 156.21)
+		(at 121.92 165.735)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e098a8ef-890f-44f8-aefe-802ea264fa7d")
+	)
+	(junction
+		(at 149.225 160.655)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2cd777d-336c-4160-a8cd-057b671fafc5")
+	)
+	(junction
+		(at 256.54 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1385b4f-cce5-4258-81de-1ab35bcca970")
 	)
 	(no_connect
 		(at 80.01 31.75)
@@ -9386,6 +9414,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 143.51) (xy 130.81 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ea5cb20-7051-4ff4-bda2-535077c90256")
+	)
+	(wire
+		(pts
 			(xy 256.54 55.88) (xy 256.54 58.42)
 		)
 		(stroke
@@ -9416,6 +9454,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 151.13) (xy 138.43 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "182f189a-90d2-4bec-ae36-86b600ef2d12")
+	)
+	(wire
+		(pts
 			(xy 16.51 49.53) (xy 31.75 49.53)
 		)
 		(stroke
@@ -9433,6 +9481,16 @@
 			(type default)
 		)
 		(uuid "1cb430ad-93a2-4aa8-a324-761f1e80edd9")
+	)
+	(wire
+		(pts
+			(xy 125.73 151.13) (xy 138.43 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1eb651de-0aed-4523-be60-36226a01e66d")
 	)
 	(wire
 		(pts
@@ -9463,6 +9521,16 @@
 			(type default)
 		)
 		(uuid "2725fc12-7e43-49cb-8819-3fedfa6955a3")
+	)
+	(wire
+		(pts
+			(xy 125.73 163.195) (xy 125.73 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "284434c8-9e41-46f2-9b1f-06ec1dcd3337")
 	)
 	(wire
 		(pts
@@ -9516,7 +9584,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 156.21) (xy 154.94 156.21)
+			(xy 149.225 160.655) (xy 156.845 160.655)
 		)
 		(stroke
 			(width 0)
@@ -9536,23 +9604,13 @@
 	)
 	(wire
 		(pts
-			(xy 123.825 158.75) (xy 143.51 158.75)
+			(xy 125.73 163.195) (xy 145.415 163.195)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3ecf1fcb-b304-4071-aab9-051b07cbf554")
-	)
-	(wire
-		(pts
-			(xy 123.825 158.75) (xy 123.825 164.465)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "422f47fa-a027-4a8a-aa11-024bbb22110a")
 	)
 	(wire
 		(pts
@@ -9563,16 +9621,6 @@
 			(type default)
 		)
 		(uuid "423fe01a-9951-479b-b460-c26f6b73efb7")
-	)
-	(wire
-		(pts
-			(xy 113.665 161.29) (xy 120.015 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46d73b45-2f11-4bd8-b1f8-665555fb5622")
 	)
 	(wire
 		(pts
@@ -9596,16 +9644,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.015 164.465) (xy 120.015 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "499c71c6-9262-4174-bc1b-3a29dbe74b4c")
-	)
-	(wire
-		(pts
 			(xy 19.05 59.69) (xy 19.05 39.37)
 		)
 		(stroke
@@ -9626,7 +9664,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 158.75) (xy 143.51 164.465)
+			(xy 145.415 163.195) (xy 145.415 168.91)
 		)
 		(stroke
 			(width 0)
@@ -9636,7 +9674,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 164.465) (xy 147.32 156.21)
+			(xy 149.225 168.91) (xy 149.225 160.655)
 		)
 		(stroke
 			(width 0)
@@ -9673,16 +9711,6 @@
 			(type default)
 		)
 		(uuid "5702d8ba-e77e-4273-9aad-9ee2118f6fdf")
-	)
-	(wire
-		(pts
-			(xy 123.825 152.4) (xy 123.825 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5b139fcb-a9f5-486c-b6d0-5195100cc97f")
 	)
 	(wire
 		(pts
@@ -9836,6 +9864,26 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 165.735) (xy 121.92 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83a0958f-b8aa-4c15-bb87-a010a3da0f09")
+	)
+	(wire
+		(pts
+			(xy 143.51 144.78) (xy 146.05 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83babc2e-7fe9-4f98-a361-6870901010f1")
+	)
+	(wire
+		(pts
 			(xy 186.69 63.5) (xy 189.23 63.5)
 		)
 		(stroke
@@ -9846,7 +9894,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.015 161.29) (xy 139.7 161.29)
+			(xy 121.92 165.735) (xy 141.605 165.735)
 		)
 		(stroke
 			(width 0)
@@ -9856,7 +9904,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 153.67) (xy 154.94 153.67)
+			(xy 153.035 158.115) (xy 156.845 158.115)
 		)
 		(stroke
 			(width 0)
@@ -9926,6 +9974,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 148.59) (xy 121.92 165.735)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2863c9b-3e3a-4e20-8bc9-4f9c3c91f40e")
+	)
+	(wire
+		(pts
 			(xy 22.86 162.56) (xy 26.67 162.56)
 		)
 		(stroke
@@ -9943,6 +10001,16 @@
 			(type default)
 		)
 		(uuid "a4d78537-7fbd-4128-92b3-35640aeada72")
+	)
+	(wire
+		(pts
+			(xy 130.81 144.78) (xy 133.35 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a60537c0-2566-4c7f-9b2e-e100dd5ec985")
 	)
 	(wire
 		(pts
@@ -10106,7 +10174,7 @@
 	)
 	(wire
 		(pts
-			(xy 131.445 164.465) (xy 131.445 153.67)
+			(xy 133.35 168.91) (xy 133.35 158.115)
 		)
 		(stroke
 			(width 0)
@@ -10116,7 +10184,7 @@
 	)
 	(wire
 		(pts
-			(xy 127.635 156.21) (xy 147.32 156.21)
+			(xy 129.54 160.655) (xy 149.225 160.655)
 		)
 		(stroke
 			(width 0)
@@ -10146,7 +10214,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 161.29) (xy 139.7 164.465)
+			(xy 141.605 165.735) (xy 141.605 168.91)
 		)
 		(stroke
 			(width 0)
@@ -10176,13 +10244,33 @@
 	)
 	(wire
 		(pts
-			(xy 127.635 164.465) (xy 127.635 156.21)
+			(xy 125.73 151.13) (xy 125.73 163.195)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caed10b2-eea5-4a14-8df4-424cd4015d1a")
+	)
+	(wire
+		(pts
+			(xy 129.54 168.91) (xy 129.54 160.655)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ce0027a1-9e37-49e0-bc48-6242180bd5f1")
+	)
+	(wire
+		(pts
+			(xy 114.3 144.78) (xy 116.84 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf4af80c-bd82-4f36-8f8a-606af41ff217")
 	)
 	(wire
 		(pts
@@ -10236,7 +10324,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 153.67) (xy 151.13 164.465)
+			(xy 153.035 158.115) (xy 153.035 168.91)
 		)
 		(stroke
 			(width 0)
@@ -10246,7 +10334,7 @@
 	)
 	(wire
 		(pts
-			(xy 131.445 153.67) (xy 151.13 153.67)
+			(xy 133.35 158.115) (xy 153.035 158.115)
 		)
 		(stroke
 			(width 0)
@@ -10336,6 +10424,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 144.78) (xy 146.05 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f04bc007-a734-423e-be84-1fd70a5d47ba")
+	)
+	(wire
+		(pts
 			(xy 41.91 124.46) (xy 41.91 101.6)
 		)
 		(stroke
@@ -10376,6 +10474,16 @@
 	)
 	(wire
 		(pts
+			(xy 127 144.78) (xy 130.81 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fed8cb1b-fa2c-4518-8e9e-7eb433a6e2de")
+	)
+	(wire
+		(pts
 			(xy 67.31 186.69) (xy 69.85 186.69)
 		)
 		(stroke
@@ -10383,6 +10491,16 @@
 			(type default)
 		)
 		(uuid "ff29a285-54b1-4391-9f29-826c22dca5a5")
+	)
+	(wire
+		(pts
+			(xy 114.3 148.59) (xy 114.3 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff8075af-8ba2-4474-844a-daf036afd693")
 	)
 	(label "RPI_LED"
 		(at 77.47 147.32 180)
@@ -11005,7 +11123,7 @@
 		(uuid "a70daef1-c130-49d1-9817-746e9f504639")
 	)
 	(label "I2C_SCL"
-		(at 154.94 156.21 0)
+		(at 156.845 160.655 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11115,7 +11233,7 @@
 		(uuid "e120632f-822d-4edf-80f3-2298402e014e")
 	)
 	(label "I2C_SDA"
-		(at 154.94 153.67 0)
+		(at 156.845 158.115 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11871,7 +11989,7 @@
 	)
 	(symbol
 		(lib_id "IIC_OLED:0.96_I2C_OLED")
-		(at 145.415 175.895 0)
+		(at 147.32 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11879,7 +11997,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b17b44b")
 		(property "Reference" "IC2"
-			(at 145.415 180.34 0)
+			(at 147.32 184.785 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11887,7 +12005,7 @@
 			)
 		)
 		(property "Value" "0.96_I2C_OLED"
-			(at 144.78 177.165 0)
+			(at 146.685 181.61 0)
 			(effects
 				(font
 					(size 1.0922 1.0922)
@@ -11895,7 +12013,7 @@
 			)
 		)
 		(property "Footprint" "IIC_OLED:0.96_I2C_OLED"
-			(at 145.415 160.02 0)
+			(at 147.32 164.465 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11904,7 +12022,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 145.415 160.02 0)
+			(at 147.32 164.465 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11913,7 +12031,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 145.415 175.895 0)
+			(at 147.32 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11943,7 +12061,7 @@
 	)
 	(symbol
 		(lib_id "IIC_OLED:0.96_I2C_OLED")
-		(at 125.73 175.895 0)
+		(at 127.635 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11951,7 +12069,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005b36dd7b")
 		(property "Reference" "IC1"
-			(at 125.73 180.34 0)
+			(at 127.635 184.785 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11959,7 +12077,7 @@
 			)
 		)
 		(property "Value" "0.96_I2C_OLED"
-			(at 125.095 177.165 0)
+			(at 127 181.61 0)
 			(effects
 				(font
 					(size 1.0922 1.0922)
@@ -11967,7 +12085,7 @@
 			)
 		)
 		(property "Footprint" "IIC_OLED:0.91_I2C_OLED"
-			(at 125.73 160.02 0)
+			(at 127.635 164.465 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11976,7 +12094,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 125.73 160.02 0)
+			(at 127.635 164.465 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -11985,7 +12103,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 125.73 175.895 0)
+			(at 127.635 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12754,6 +12872,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_BJT:MMBT3904")
+		(at 194.31 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36539218-0eb5-4744-8d95-2df3db8d9064")
+		(property "Reference" "Q1"
+			(at 199.39 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBT3904"
+			(at 199.39 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+			(at 199.39 65.405 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
+			(at 194.31 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
+			(at 194.31 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C18536"
+			(at 194.31 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "2N3904S-RTK/PS"
+			(at 194.31 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/KECSemicon-2N3904S_RTKPS/C18536"
+			(at 194.31 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "387f331f-3c73-4787-9a76-e72931557059")
+		)
+		(pin "1"
+			(uuid "9aea42b7-0433-483d-b5ae-3765a58a71d7")
+		)
+		(pin "2"
+			(uuid "a75ec6d1-a40b-47ce-a022-3bc30f271ee3")
+		)
+		(instances
+			(project ""
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 19.05 87.63 0)
 		(unit 1)
@@ -13457,56 +13678,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:2N3904")
-		(at 254 106.68 0)
+		(lib_id "power:GND")
+		(at 114.3 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "6d5c71c0-dbf3-4fab-95a5-3f9d201eb194")
-		(property "Reference" "Q3"
-			(at 259.08 105.4099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NPN: 2n3904"
-			(at 259.08 107.9499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 259.08 108.585 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586173324804706304"
-			(at 254 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
-			(at 254 106.68 0)
+		(uuid "73579ce9-31e9-4389-a96b-d3d12ef64e9a")
+		(property "Reference" "#PWR022"
+			(at 114.3 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13514,72 +13696,8 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C18536"
-			(at 254 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR.Part #" "2N3904S-RTK/PS"
-			(at 254 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/KECSemicon-2N3904S_RTKPS/C18536"
-			(at 254 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "bfea331d-0232-45b3-840f-b0c542dac592")
-		)
-		(pin "1"
-			(uuid "6f3e54f1-739d-4611-a1ae-2a4962a13d07")
-		)
-		(pin "3"
-			(uuid "06210a8b-5e33-4eaf-a4dc-027e274a4592")
-		)
-		(instances
-			(project "RPi_Hat"
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 123.825 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e3bb92c-3e56-4f93-90f2-23a864ef4cfb")
-		(property "Reference" "#PWR011"
-			(at 123.825 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 123.825 147.32 0)
+		(property "Value" "GND"
+			(at 114.3 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13587,7 +13705,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.825 152.4 0)
+			(at 114.3 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13596,7 +13714,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.825 152.4 0)
+			(at 114.3 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13604,8 +13722,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 123.825 152.4 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 114.3 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13614,115 +13741,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "61b63f2d-3ce9-4331-a674-d66c1c6ae932")
+			(uuid "d21ed70c-3abf-49af-b85e-4b5f530c3b4c")
 		)
 		(instances
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:2N3904")
-		(at 254 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "725afe5e-4d89-4ee7-b19e-b5cd5f324ffc")
-		(property "Reference" "Q4"
-			(at 259.08 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NPN: 2n3904"
-			(at 259.08 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 259.08 149.225 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586173324804706304"
-			(at 254 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
-			(at 254 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part #" "C18536"
-			(at 254 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR.Part #" "2N3904S-RTK/PS"
-			(at 254 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/KECSemicon-2N3904S_RTKPS/C18536"
-			(at 254 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d7805f80-6447-4541-8680-797fb9ff8a31")
-		)
-		(pin "1"
-			(uuid "16c50770-bdbd-4675-9693-2c93de1ad0e8")
-		)
-		(pin "3"
-			(uuid "b721697d-7d7e-413b-9dc3-5935ddcbba9e")
-		)
-		(instances
-			(project "RPi_Hat"
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "Q4")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -13798,81 +13822,6 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 113.665 161.29 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b1f5d3f-cd9c-4591-9024-03711eb47a42")
-		(property "Reference" "#PWR09"
-			(at 113.665 167.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 113.665 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 113.665 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 113.665 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 113.665 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Field5" ""
-			(at 113.665 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5b82c331-a8d7-4152-877c-7b4dc0a0f6f6")
-		)
-		(instances
-			(project "RPi_Hat"
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -14126,6 +14075,109 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:MMBT3904")
+		(at 254 106.68 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8bfaebce-1cae-4c8c-94c0-2db22d90a6ac")
+		(property "Reference" "Q3"
+			(at 259.08 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBT3904"
+			(at 259.08 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+			(at 259.08 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C18536"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "2N3904S-RTK/PS"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/KECSemicon-2N3904S_RTKPS/C18536"
+			(at 254 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6f84cae4-19c1-475a-9285-6a5ce9ba145f")
+		)
+		(pin "1"
+			(uuid "a359fe50-912c-46cd-bc24-7182f2b39f2a")
+		)
+		(pin "2"
+			(uuid "e21d63c3-6943-4efe-9bde-449e072de3e3")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -14487,109 +14539,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:2N3904")
-		(at 254 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "adc862cb-7431-40ca-9ea8-3ad53d1593e7")
-		(property "Reference" "Q2"
-			(at 259.08 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NPN: 2n3904"
-			(at 259.08 64.7699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 259.08 65.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586173324804706304"
-			(at 254 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
-			(at 254 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part #" "C18536"
-			(at 254 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MFR.Part #" "2N3904S-RTK/PS"
-			(at 254 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/KECSemicon-2N3904S_RTKPS/C18536"
-			(at 254 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "df39e7e9-5284-4a3f-9a69-407e7b2b3ecf")
-		)
-		(pin "1"
-			(uuid "0273c311-0094-4390-befc-27ac7d599aa6")
-		)
-		(pin "3"
-			(uuid "c4bab468-1459-425e-8f45-e642dd0c33b6")
-		)
-		(instances
-			(project "RPi_Hat"
-				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 199.39 154.94 0)
 		(unit 1)
@@ -14648,6 +14597,147 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 130.81 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b62f8070-124f-4d7c-9487-1829555dd9a3")
+		(property "Reference" "#PWR021"
+			(at 130.81 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 130.81 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 130.81 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "38519951-e7bb-4516-80e2-1a82b388e684")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 146.05 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b7d310e4-4bf8-4186-9a62-f65888434f7d")
+		(property "Reference" "#PWR023"
+			(at 146.05 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 146.05 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.05 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 146.05 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 146.05 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 146.05 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "595ba9e0-d334-43a7-842b-46d0c06bf078")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -15069,6 +15159,108 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:MMBT3904")
+		(at 254 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cd75ac00-cc2c-466e-80c7-944b95f879c3")
+		(property "Reference" "Q4"
+			(at 251.206 151.384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMBT3904"
+			(at 246.126 154.432 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
+			(at 259.08 149.225 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
+			(at 254 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
+			(at 254 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C18536"
+			(at 254 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "2N3904S-RTK/PS"
+			(at 254 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/KECSemicon-2N3904S_RTKPS/C18536"
+			(at 254 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "eedff254-9715-4d27-bc40-b8a575bf6697")
+		)
+		(pin "1"
+			(uuid "1306f614-81af-4e41-a3da-70fc2e9144b2")
+		)
+		(pin "2"
+			(uuid "cb0bef94-681a-4b70-b05f-2db2daff4cb6")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -15535,17 +15727,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:2N3904")
-		(at 194.31 63.5 0)
+		(lib_id "Transistor_BJT:MMBT3904")
+		(at 254 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e872318c-9413-4624-8b58-1e34d4ac56e2")
-		(property "Reference" "Q1"
-			(at 199.39 62.2299 0)
+		(uuid "e7f1f7b0-17a7-48c7-81de-f03eda45ae6a")
+		(property "Reference" "Q2"
+			(at 259.08 62.2299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15553,8 +15745,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NPN: 2n3904"
-			(at 199.39 64.7699 0)
+		(property "Value" "MMBT3904"
+			(at 259.08 64.7699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15563,7 +15755,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering"
-			(at 199.39 65.405 0)
+			(at 259.08 65.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15573,8 +15765,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586173324804706304"
-			(at 194.31 63.5 0)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf"
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15583,8 +15775,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
-			(at 194.31 63.5 0)
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, SOT-23"
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15593,7 +15785,7 @@
 			)
 		)
 		(property "JLCPCB Part #" "C18536"
-			(at 194.31 63.5 0)
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15602,7 +15794,7 @@
 			)
 		)
 		(property "MFR.Part #" "2N3904S-RTK/PS"
-			(at 194.31 63.5 0)
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15611,7 +15803,7 @@
 			)
 		)
 		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/KECSemicon-2N3904S_RTKPS/C18536"
-			(at 194.31 63.5 0)
+			(at 254 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15619,19 +15811,19 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "571b6c4b-1066-4e58-9e3b-a92d47d8c715")
+		(pin "3"
+			(uuid "d2b45f9d-6aa2-4582-9558-9822be7b1f84")
 		)
 		(pin "1"
-			(uuid "1d48d8ad-05ab-4742-a609-57fa3ecd9bd6")
+			(uuid "981db797-ba3c-40fb-92fd-8e93e4f1c0ea")
 		)
-		(pin "3"
-			(uuid "6d053642-d54b-4408-a603-70149db85e6b")
+		(pin "2"
+			(uuid "6642cc97-653b-473c-a9d9-23c24d1c7f40")
 		)
 		(instances
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
-					(reference "Q1")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -15713,6 +15905,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Jumper:SolderJumper_3_Bridged12")
+		(at 121.92 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f14cf9f6-0c78-427f-9900-79e685d6bd3e")
+		(property "Reference" "JP3"
+			(at 121.92 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_3_Bridged12"
+			(at 121.92 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
+			(at 121.92 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
+			(at 121.92 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c704acd3-b51b-4748-8b33-1206d5e058fa")
+		)
+		(pin "2"
+			(uuid "3216de87-3d56-49f6-b5b8-eaf520593652")
+		)
+		(pin "3"
+			(uuid "710b1759-857e-4355-9430-3b357605d870")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "JP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 118.11 96.52 0)
 		(unit 1)
@@ -15773,6 +16036,77 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Jumper:SolderJumper_3_Bridged12")
+		(at 138.43 144.78 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ff0f2774-14e1-44ff-9660-629add4024c3")
+		(property "Reference" "JP4"
+			(at 138.43 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SolderJumper_3_Bridged12"
+			(at 138.43 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels"
+			(at 138.43 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3-pole Solder Jumper, pins 1+2 closed/bridged"
+			(at 138.43 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa6af59b-a4b7-4d4c-8cf9-845e114522f3")
+		)
+		(pin "2"
+			(uuid "5e2a82b4-3540-4341-9a3e-ec05923e4554")
+		)
+		(pin "3"
+			(uuid "41334f2b-848b-48ee-b987-ef857bd24802")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "JP4")
 					(unit 1)
 				)
 			)
