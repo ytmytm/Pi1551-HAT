@@ -1,57 +1,106 @@
-# PI1541 Hat
-OK, so the new and shiny SD2IEC wasn't all you wanted from a lowcost floppy
-emulation solution for your Commodore 64! Sure, there are other good solutions
-out there for those willing and able to put a lot of money into the FPGA-based
-alternatives - personally can see myself affording one of them someday, but that
-needs saving up some money I don't currently have. Also, I don't want my
-other retro computers to think I'm completely biased towards the Commodore-stuff
-so options were needed...
 
-Thankfully, some enterprising folks have taken it upon themselves to create a
-solution based on the Raspberry Pi (3B or newer) and with some extra
-modifications we all can build one. Personally I prefer clean and nice PCBs
-over hacked together stuff, so away I went to make one in KiCAD. My design is
-based on what the original coder of the Pi1541 software has named option B, but
-given that option A assumes only one device on the serial bus I wanted something
-that would work with a physical 1541 drive as well (how else am I supposed to 
-backup my old rotting disks?).
+# PI1551 HAT
 
-For more details on the software, see https://cbm-pi1541.firebaseapp.com/ for
-more details not included in my humble hobby project. The base template used as a
-starting point for the RPi hat, including RPi-specific connectors, is found on
-https://github.com/xesscorp/RPi_Hat_Template.
+This is a minimalistic HAT design for RaspberryPI 3A/3B/3B+ for a low-cost 1551 floppy emulation solution for your Commodore C16/C116 or Plus4.
 
-![Pi1541 Revision B](https://raw.githubusercontent.com/tebl/Pi1541-Hat/master/gallery/2018-08-05%2023.22.30.jpg)
-![Pi1541 Installed and mounted on Raspberry Pi 3B+](https://raw.githubusercontent.com/tebl/Pi1541-Hat/master/gallery/2018-08-05%2014.16.36.jpg)
+This hat doesn't just support 1551 emulation. It can also playback TAP files.
 
-# BOM
-This is the part list as it stands now, everything should be readily available
-from your friendly neighbourhood electronics store - for me that means ebay, but
-your mileage may wary. The design of the board has been kept simple so that
-anyone with access to a reasonably sized soldering iron should easily be able to
-assemble it themselves, all parts are through-hole so no need to fear those tiny
-SMD-parts because you won't find any of them here!
+**Warning: This is for [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd) ONLY. DO NOT connect PI1551 HAT to 1551 paddle. This circuit is not 5V-tolerant - it will damage your RaspberryPi.**
 
-Values in parenthesis are components that are to be
-considered optional, but if you want to build it for yourself I higly recommend
-them as they only slightly increases the overall cost of doing this project.
-Displays should be of the I2C-variety with 4 pins in the following order: GND,
-VCC, SCL and SDA.
+<img src="media/01.pcb.png" width=640 alt="PI1551 HAT PCB">
 
-| Reference | Item                                  | Count |
-| --------- | ------------------------------------- | ----- |
-| PCB       | Fabricate using Gerber files ([order](https://www.pcbway.com/project/shareproject/C64_Pi1541.html?inviteid=88707))  |     1 |
-| J1        | 2x20 pin long female header           |     1 |
-| BZ1       | Buzzer (7mm pin spacing, 5mm OK)      |   (1) |
-| C1        | 100nF ceramic capacitor               |     1 |
-| R1        | 100 Ohm resistor                      |     1 |
-| R2, R3    | 1k Ohm resistor                       |     2 |
-| IEC1, IEC2| Female S-terminal 6pin DIN PCB        |  1 (1)|
-| IC1       | SSD1306 OLED-display 128x64 (0.96")   |    (1)|
-| IC2       | 7406 DIP                              |     1 |
-| IC3       | 4ch I2C level converter module        |     1 |
-| IC4       | SSD1306 OLED-display 128x32 (0.91")   |    (1)|
-| SW1-SW5   | Momentary push button, 6x6mm          |    (5)|
-| D1        | 5mm LED, red for authenticity         |     1 |
 
-Please use the order link above when signing up to help me support this project, I'll get a small discount on future orders and hopefully that means I can afford to keep developing new and exciting modules in the future. By using the URL you won't have to deal with the rather daunting order forms for PCB fabrication, but if you want to go that route they'll probably want a zipped-up copy of the files in the export-directory!
+## Origin
+
+This has been cloned off [PI1541 Hat](https://github.com/tebl/C64-Pi1541-module) with changes to support 1551 emulation and tape playback.
+
+## Software
+
+The RaspberryPI firmware comes from [PI1551 project](https://github.com/ytmytm/Pi1551) (branch 'pi1551').
+
+## Hardware
+
+The KiCad files are provided in the repository.
+
+- [Schematic PDF](plots/RPi_Hat.pdf)
+- [Gerbers](plots/)
+
+### Required parts
+
+The only required parts for 1551 emulation are:
+
+- 40x2 female socket for RaspberryPI GPIO connector
+- 8x2 male connector for a ribbon cable leading to [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd)
+- D2 (BAT54 or BAS40 or BAT43 or 1n5819 Schottky diode) and R2 (10K) to protect RaspberryPi
+
+Everything else is optional.
+
+### Display
+
+- OLED display: 128x64 or 128x32
+- OLED display with GND/VCC/SCL/SCK (default) or VCC/GND/SCL/SCK pinout
+
+### Drive LED indicator
+
+- 3mm or 5mm LED
+
+### Audio
+
+- buzzer
+
+### Controls
+
+- 5 buttons to control Pi1551
+- or rotary encoder (ALPS EC11E)
+- or rotary encoder module KY-040 (with the same rotary encoder part)
+
+### TAP playback
+
+- MiniDIN 7-pin socket for tape emulation
+- or a header to solder wires if you only have one MiniDin 7-pin plug
+
+The only transistor/resistor section required is on the `TAP_READ` block (Q2, R5, R8) and you need a MiniDIN socket or use connector on `J5` to solder the cable directly.
+
+The other parts of TAP section are optional.
+
+For example, you may choose not to check the `MOTOR` line and wire jumper `JP2` so that (for Pi1551) the motor line is always enabled.
+
+In the opposite direction, you might decide not to solder the `TAP_SENSE` block (Q1, R3, R4) and wire `JP1` so that the `SENSE` line is always active and the computer sees the tape PLAY button as always pressed.
+
+All of this is also controlled by the [PI1551](https://github.com/ytmytm/Pi1551) configuration file, so you might just as well solder all the parts and decide later.
+
+*Note that if your computer had its original CPU replaced by a 6510, then it's no longer capable of controlling the `MOTOR` line (see [here](https://hackjunk.com/2017/06/23/commodore-16-plus-4-8501-to-6510-cpu-conversion/))*
+
+The cable must have at least two wires: `TAP_READ` and `GND` connected. At least one end of the cable must have a Mini-DIN-7 male plug.
+
+At the time of writing this, `TAP_WRITE` is provided for future compatibility, when PI1551 will support writing to tape.
+
+## PCB
+
+The board is a mixture of THT and SMD parts.
+
+Don't be afraid of SMD parts, I have used larger footprints that are more friendly for hand soldering. You need tweezers, a steady hand and a 0.5mm solder. Use the flux generously.
+
+For convenience, the majority of resistors (R2-R10) are all the same. Use any value in the 1K-10K range you have at hand.
+
+You might find that soldering those four SMD transistors and ten resistors is faster than their THT counterparts.
+
+## BOM
+
+| Reference | Item                                   | Count |
+| --------- | -------------------------------------- | ----- |
+| J1        | 2x20 pin long female header            |     1 |
+| J2        | 2x8 pin long male header or IDC socket |     1 |
+| J3        | KY-040 rotary encoder module           |    (1)|
+| J4        | MiniDIN-7 female socket                |    (1)|
+| J5        | 1x7 pin long male header               |    (1)|
+| BZ1       | Buzzer (7mm pin spacing, 5mm OK)       |    (1)|
+| IC1       | SSD1306 OLED-display 128x64 (0.96")    |    (1)|
+| IC2       | SSD1306 OLED-display 128x32 (0.91")    |    (1)|
+| SW1-SW5   | Momentary push button, 6x6mm           |    (5)|
+| SW6       | ALPS EC11E rotary encoder              |    (1)|
+| D1        | 3mm or 5mm LED, red for authenticity   |     1 |
+| D2        | Schottky diode: BAT54, 1n5819, BAT43, etc. |    1 |
+| R1        | 100-220 Ohm resistor                   |     1 |
+| R2-R10    | 1K-10K Ohm resistor                    |     1+(9) |
+| Q1-Q4     | MMBT3904 or 2n3904 transistors (any NPN) |    (4) |
