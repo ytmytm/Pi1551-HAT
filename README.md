@@ -25,34 +25,40 @@ The KiCad files are provided in the repository.
 - [Schematic PDF](plots/RPi_Hat.pdf)
 - [Gerbers](plots/)
 
+<img src="media/03.assembled.jpg" width=640 alt="PI1551 HAT fully assembled">
+
 ### Required parts
 
 The only required parts for 1551 emulation are:
 
 - 40x2 female socket for RaspberryPI GPIO connector
 - 8x2 male connector for a ribbon cable leading to [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd)
-- D2 (BAT54 or BAS40 or BAT43 or 1n5819 Schottky diode) and R2 (10K) to protect RaspberryPi
+- D2 (BAT54 or BAS40 or BAT43 or 1n5819 Schottky diode) to protect RaspberryPi
+- R2 (10K) (companion to D2)
 
 Everything else is optional.
 
+You also need a straight 16-wire ribbon cable. The connections are 1:1, so it doesn't really matter on which side the red stripe is and towards which side (notch or without a notch) the ribbon cable goes out of the connector. However I recommend crimping the cable in the same way as on the image below, it makes cable routing much easier on both ends. 
+
 ### Display
 
-- OLED display: 128x64 or 128x32
-- OLED display with GND/VCC/SCL/SCK (default) or VCC/GND/SCL/SCK pinout
+- OLED display: SSD1306 128x64 or 128x32 or SH1106 128x64
+- OLED display with GND/VCC/SCL/SCK (default) or VCC/GND/SCL/SCK pinout, controlled with solder jumpers
 
 ### Drive LED indicator
 
 - 3mm or 5mm LED
+- R1 (220R)s
 
 ### Audio
 
-- buzzer
+- 3V buzzer with generator
 
 ### Controls
 
-- 5 buttons to control Pi1551
-- or rotary encoder (ALPS EC11E)
-- or rotary encoder module KY-040 (with the same rotary encoder part)
+- 5 buttons (6x6mm tact switch) to control Pi1551
+- or two buttons and rotary encoder (ALPS EC11E)
+- or two buttons and rotary encoder module KY-040 (with the same rotary encoder part)
 
 ### TAP playback
 
@@ -61,7 +67,7 @@ Everything else is optional.
 
 The only transistor/resistor section required is on the `TAP_READ` block (Q2, R5, R8) and you need a MiniDIN socket or use connector on `J5` to solder the cable directly.
 
-The other parts of TAP section are optional.
+The other parts of TAP section are optional, but I recommend installing all of them anyway.
 
 For example, you may choose not to check the `MOTOR` line and wire jumper `JP2` so that (for Pi1551) the motor line is always enabled.
 
@@ -79,11 +85,15 @@ At the time of writing this, `TAP_WRITE` is provided for future compatibility, w
 
 The board is a mixture of THT and SMD parts.
 
-Don't be afraid of SMD parts, I have used larger footprints that are more friendly for hand soldering. You need tweezers, a steady hand and a 0.5mm solder. Use the flux generously.
+Don't be afraid of SMD parts, I have used larger footprints that are more friendly for hand soldering. You need tweezers, a steady hand, iron with a fine tip and a 0.5mm solder. Use the flux generously.
+
+<img src="media/02.pcb-smd.jpg" width=640 alt="PI1551 HAT PCB with SMD parts assembled">
+
+Note the D2 diode orientation - the stripe is on the same side as the closed silkscreen, towards the TCBM connector. 
 
 For convenience, the majority of resistors (R2-R10) are all the same. Use any value in the 1K-10K range you have at hand.
 
-You might find that soldering those four SMD transistors and ten resistors is faster than their THT counterparts.
+You might find that soldering those four SMD transistors, ten resistors and one diode is faster than their THT counterparts.
 
 ## BOM
 
