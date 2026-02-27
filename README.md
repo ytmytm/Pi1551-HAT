@@ -38,11 +38,15 @@ The only required parts for 1551 emulation are:
 
 Everything else is optional.
 
-You also need a straight 16-wire ribbon cable. The connections are 1:1, so it doesn't really matter on which side the red stripe is and towards which side (notch or without a notch) the ribbon cable goes out of the connector. However I recommend crimping the cable in the same way as on the image below, it makes cable routing much easier on both ends. 
+You also need a straight 16-wire ribbon cable. The connections are 1:1, so as long as both ends are done in exactly the same way it doesn't really matter on which side the red stripe is and towards which side (notch or without a notch) the ribbon cable goes out of the connector. However I recommend crimping the cable in the same way as on the image below, it makes cable routing much easier on both ends.
+
+You can order a PCB with all the SMD parts already populated:
+
+<a href="https://www.pcbway.com/project/shareproject/PI1551_HAT_a7817d89.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
 ### Display
 
-- OLED display: SSD1306 128x64 or 128x32 or SH1106 128x64
+- OLED display: SSD1306 128x64 or 128x32 or SH1106 128x64 (that one is large, so you can't use rotary encoder)
 - OLED display with GND/VCC/SCL/SCK (default) or VCC/GND/SCL/SCK pinout, controlled with solder jumpers
 
 ### Drive LED indicator
@@ -100,17 +104,17 @@ You might find that soldering those four SMD transistors, ten resistors and one 
 | Reference | Item                                   | Count |
 | --------- | -------------------------------------- | ----- |
 | J1        | 2x20 pin long female header            |     1 |
-| J2        | 2x8 pin long male header or IDC socket |     1 |
+| J2        | 2x8 pin IDC 16P socket                 |     1 |
 | J3        | KY-040 rotary encoder module           |    (1)|
 | J4        | MiniDIN-7 female socket                |    (1)|
 | J5        | 1x7 pin long male header               |    (1)|
-| BZ1       | Buzzer (7mm pin spacing, 5mm OK)       |    (1)|
+| BZ1       | Buzzer (5mm / 7mm pin spacing), 3V     |    (1)|
 | IC1       | SSD1306 OLED-display 128x64 (0.96")    |    (1)|
 | IC2       | SSD1306 OLED-display 128x32 (0.91")    |    (1)|
 | SW1-SW5   | Momentary push button, 6x6mm           |    (5)|
-| SW6       | ALPS EC11E rotary encoder              |    (1)|
-| D1        | 3mm or 5mm LED, red for authenticity   |     1 |
+| SW6       | ALPS EC11E rotary encoder or similar   |    (1)|
+| D1        | 3mm / 5mm LED, red for authenticity    |     1 |
 | D2        | Schottky diode: BAT54, 1n5819, BAT43, etc. |    1 |
 | R1        | 100-220 Ohm resistor                   |     1 |
 | R2-R10    | 1K-10K Ohm resistor                    |     1+(9) |
-| Q1-Q4     | MMBT3904 or 2n3904 transistors (any NPN) |    (4) |
+| Q1-Q4     | MMBT3904 / 2N3904 transistors          |    (4) |
