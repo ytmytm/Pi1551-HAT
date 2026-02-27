@@ -38,7 +38,7 @@ The only required parts for 1551 emulation are:
 
 Everything else is optional.
 
-You also need a straight 16-wire ribbon cable. The connections are 1:1, so as long as both ends are done in exactly the same way it doesn't really matter on which side the red stripe is and towards which side (notch or without a notch) the ribbon cable goes out of the connector. However I recommend crimping the cable in the same way as on the image below, it makes cable routing much easier on both ends.
+You also need a straight 16-wire ribbon cable. The connections are 1:1, so as long as both ends are done in exactly the same way it doesn't really matter on which side the red stripe is and towards which side (notch or without a notch) the ribbon cable goes out of the connector. However I recommend crimping the cable in the same way as on the image above, with both connectors done in the same way. It makes cable routing much easier on both ends.
 
 You can order a PCB with all the SMD parts already populated:
 
