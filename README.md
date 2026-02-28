@@ -1,89 +1,89 @@
-
 # PI1551 HAT
 
-This is a minimalistic HAT design for RaspberryPI 3A/3B/3B+ for a low-cost 1551 floppy emulation solution for your Commodore C16/C116 or Plus4.
+A minimalistic HAT for Raspberry Pi 3A/3B/3B+ that gives you low-cost **1551 floppy emulation** (and optionally **TAP tape playback**) for Commodore C16/C116 or Plus/4. You build only what you need: the core is a few parts; display, controls, and TAP support are optional add-ons.
 
-This hat doesn't just support 1551 emulation. It can also playback TAP files.
-
-**Warning: This is for [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd) ONLY. DO NOT connect PI1551 HAT to 1551 paddle. This circuit is not 5V-tolerant - it will damage your RaspberryPi.**
+**Warning: For [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd) ONLY. Do not connect this HAT to a real 1551 drive. The circuit is not 5V-tolerant and can damage the Raspberry Pi.**
 
 <img src="media/01.pcb.png" width=640 alt="PI1551 HAT PCB">
 
+<img src="media/04.pi1551-hat-action.jpg" width=640 alt="PI1551-HAT in action">
+
+---
+
+## What to build (at a glance)
+
+| Goal | You need |
+|------|----------|
+| **1551 emulation only** | PCB + required parts below + 16-wire ribbon cable + [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd). No display, no buttons (use SSH or config file). |
+| **1551 + menu on device** | Above + **one of**: 5 buttons, or 2 buttons + rotary encoder (ALPS EC11E or KY-040). Optionally add OLED and/or LED. |
+| **1551 + TAP playback** | Above + TAP_READ block (Q2, R5, R8) + MiniDIN-7 socket or J5 header + cable to computer. Rest of TAP circuit is optional (see [TAP playback](#tap-playback)). |
+
+Everything not in the “required parts” list is optional. You can add options later.
+
+---
 
 ## Origin
 
-This has been cloned off [PI1541 Hat](https://github.com/tebl/C64-Pi1541-module) with changes to support 1551 emulation and tape playback.
+Cloned from [PI1541 Hat](https://github.com/tebl/C64-Pi1541-module), adapted for 1551 and tape playback.
 
 ## Software
 
-The RaspberryPI firmware comes from [PI1551 project](https://github.com/ytmytm/Pi1551) (branch 'pi1551').
+Firmware: [Pi1551](https://github.com/ytmytm/Pi1551) (branch `pi1551`).
 
 ## Hardware
-
-The KiCad files are provided in the repository.
 
 - [Schematic PDF](plots/RPi_Hat.pdf)
 - [Gerbers](plots/)
 
 <img src="media/03.assembled.jpg" width=640 alt="PI1551 HAT fully assembled">
 
-### Required parts
+### Required parts (1551 emulation)
 
-The only required parts for 1551 emulation are:
+- 40×2 female header for Raspberry Pi GPIO
+- 2×8 (16-pin) male IDC connector for ribbon cable to [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd)
+- D2: Schottky diode (BAT54, BAS40, BAT43 or 1N5819) — protects the Pi
+- R2: 10K resistor (with D2)
 
-- 40x2 female socket for RaspberryPI GPIO connector
-- 8x2 male connector for a ribbon cable leading to [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd)
-- D2 (BAT54 or BAS40 or BAT43 or 1n5819 Schottky diode) to protect RaspberryPi
-- R2 (10K) (companion to D2)
+Plus a **straight 16-wire ribbon cable**. Connections are 1:1; both ends must be crimped the same way. I recommend crimping the cable the same way as in the photo above, with both connectors identical — it makes cable routing easier on both ends.
 
-Everything else is optional.
-
-You also need a straight 16-wire ribbon cable. The connections are 1:1, so as long as both ends are done in exactly the same way it doesn't really matter on which side the red stripe is and towards which side (notch or without a notch) the ribbon cable goes out of the connector. However I recommend crimping the cable in the same way as on the image above, with both connectors done in the same way. It makes cable routing much easier on both ends.
-
-You can order a PCB with all the SMD parts already populated:
+You can order the PCB with SMD parts pre-populated:
 
 <a href="https://www.pcbway.com/project/shareproject/PI1551_HAT_a7817d89.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a>
 
-### Display
+### Optional: display
 
-- OLED display: SSD1306 128x64 or 128x32 or SH1106 128x64 (that one is large, so you can't use rotary encoder)
-- OLED display with GND/VCC/SCL/SCK (default) or VCC/GND/SCL/SCK pinout, controlled with solder jumpers
+- OLED: SSD1306 128×64 or 128×32, or SH1106 128×64 (SH1106 is large - no room for rotary encoder).
+- Pinout selectable by solder jumpers: GND/VCC/SCL/SCL (default) or VCC/GND/SCL/SCL.
 
-### Drive LED indicator
+### Optional: drive LED
 
-- 3mm or 5mm LED
-- R1 (220R)s
+- 3 mm or 5 mm LED + R1 (e.g. 220 Ω).
 
-### Audio
+### Optional: audio
 
-- 3V buzzer with generator
+- 3 V buzzer with built-in oscillator.
 
-### Controls
+### Optional: controls (pick one set)
 
-- 5 buttons (6x6mm tact switch) to control Pi1551
-- or two buttons and rotary encoder (ALPS EC11E)
-- or two buttons and rotary encoder module KY-040 (with the same rotary encoder part)
+- **Option A:** 5× 6×6 mm tact switches (SW1–SW5).
+- **Option B:** 2× tact switches + rotary encoder (ALPS EC11E or KY-040 module).
 
 ### TAP playback
 
-- MiniDIN 7-pin socket for tape emulation
-- or a header to solder wires if you only have one MiniDin 7-pin plug
+To play TAP files you need:
 
-The only transistor/resistor section required is on the `TAP_READ` block (Q2, R5, R8) and you need a MiniDIN socket or use connector on `J5` to solder the cable directly.
+- **TAP_READ block:** Q2, R5, R8 (required for tape in).
+- **Connector:** MiniDIN-7 socket (J4) **or** 1×7 pin header (J5) to solder the cable.
+- **Cable:** At least TAP_READ and GND; one end must be Mini-DIN-7 male.
 
-The other parts of TAP section are optional, but I recommend installing all of them anyway.
+The rest of the TAP circuit is optional, but recommended:
 
-For example, you may choose not to check the `MOTOR` line and wire jumper `JP2` so that (for Pi1551) the motor line is always enabled.
+- **TAP_SENSE** (Q1, R3, R4): lets the computer see “tape PLAY pressed”. If you omit it, close jumper JP1 so SENSE is always active.
+- **MOTOR** (Q3, Q4, etc.): lets the computer control motor line. If you omit it, close JP2 so motor is always enabled (fine for Pi1551). You can also leave all parts in and configure behaviour in the [Pi1551](https://github.com/ytmytm/Pi1551) config.
 
-In the opposite direction, you might decide not to solder the `TAP_SENSE` block (Q1, R3, R4) and wire `JP1` so that the `SENSE` line is always active and the computer sees the tape PLAY button as always pressed.
+*If your Plus/4 has a 6510 CPU swap, it cannot drive the MOTOR line (see [this note](https://hackjunk.com/2017/06/23/commodore-16-plus-4-8501-to-6510-cpu-conversion/)). You can still have MOTOR active all the time via the [Pi1551](https://github.com/ytmytm/Pi1551) configuration file.*
 
-All of this is also controlled by the [PI1551](https://github.com/ytmytm/Pi1551) configuration file, so you might just as well solder all the parts and decide later.
-
-*Note that if your computer had its original CPU replaced by a 6510, then it's no longer capable of controlling the `MOTOR` line (see [here](https://hackjunk.com/2017/06/23/commodore-16-plus-4-8501-to-6510-cpu-conversion/))*
-
-The cable must have at least two wires: `TAP_READ` and `GND` connected. At least one end of the cable must have a Mini-DIN-7 male plug.
-
-At the time of writing this, `TAP_WRITE` is provided for future compatibility, when PI1551 will support writing to tape.
+TAP_WRITE is on the PCB for future use when Pi1551 supports tape write.
 
 ## PCB
 
@@ -101,6 +101,8 @@ You might find that soldering those four SMD transistors, ten resistors and one 
 
 ## BOM
 
+Count of optional parts in brackets.s
+
 | Reference | Item                                   | Count |
 | --------- | -------------------------------------- | ----- |
 | J1        | 2x20 pin long female header            |     1 |
@@ -113,8 +115,8 @@ You might find that soldering those four SMD transistors, ten resistors and one 
 | IC2       | SSD1306 OLED-display 128x32 (0.91")    |    (1)|
 | SW1-SW5   | Momentary push button, 6x6mm           |    (5)|
 | SW6       | ALPS EC11E rotary encoder or similar   |    (1)|
-| D1        | 3mm / 5mm LED, red for authenticity    |     1 |
+| D1        | 3mm / 5mm LED (e.g. red for authenticity)               |    (1)|
 | D2        | Schottky diode: BAT54, 1n5819, BAT43, etc. |    1 |
-| R1        | 100-220 Ohm resistor                   |     1 |
-| R2-R10    | 1K-10K Ohm resistor                    |     1+(9) |
+| R1        | 100-220 Ohm (for LED)                  |    (1)|
+| R2-R10    | 1K-10K Ohm (R2 required; rest optional)|  1+(9)|
 | Q1-Q4     | MMBT3904 / 2N3904 transistors          |    (4) |
