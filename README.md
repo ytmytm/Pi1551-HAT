@@ -109,7 +109,7 @@ You might find that soldering those four SMD transistors, ten resistors and one 
 
 ## BOM
 
-Count of optional parts in brackets.s
+Count of optional parts in brackets.
 
 | Reference | Item                                   | Count |
 | --------- | -------------------------------------- | ----- |
@@ -128,6 +128,7 @@ Count of optional parts in brackets.s
 | R1        | 100-220 Ohm (for LED)                  |    (1)|
 | R2-R10    | 1K-10K Ohm (R2 required; rest optional)|  1+(9)|
 | Q1-Q4     | MMBT3904 / 2N3904 transistors          |    (4) |
+
 
 
 
