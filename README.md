@@ -14,7 +14,7 @@ A minimalistic HAT for Raspberry Pi 3A/3B/3B+ that gives you low-cost **1551 flo
 
 | Goal | You need |
 |------|----------|
-| **1551 emulation only** | PCB + required parts below + 16-wire ribbon cable + [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd). No display, no buttons (use SSH or config file). |
+| **1551 emulation only** | PCB + required parts below + 16-wire ribbon cable + [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd). No display, no buttons (disk commands only or HDMI+USB keyboard). |
 | **1551 + menu on device** | Above + **one of**: 5 buttons, or 2 buttons + rotary encoder (ALPS EC11E or KY-040). Optionally add OLED and/or LED. |
 | **1551 + TAP playback** | Above + TAP_READ block (Q2, R5, R8) + MiniDIN-7 socket or J5 header + cable to computer. Rest of TAP circuit is optional (see [TAP playback](#tap-playback)). |
 
@@ -124,5 +124,6 @@ Count of optional parts in brackets.s
 | R1        | 100-220 Ohm (for LED)                  |    (1)|
 | R2-R10    | 1K-10K Ohm (R2 required; rest optional)|  1+(9)|
 | Q1-Q4     | MMBT3904 / 2N3904 transistors          |    (4) |
+
 
 
