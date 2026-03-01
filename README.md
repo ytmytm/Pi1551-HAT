@@ -12,6 +12,8 @@ A minimalistic HAT for Raspberry Pi 3A/3B/3B+ that gives you low-cost **1551 flo
 
 ## What to build (at a glance)
 
+This is a HAT board that sits on top of a Raspberry Pi. You need to have a Raspberry Pi 3A or 3B and a capable (at least 2A) USB-Micro power supplier for it.
+
 | Goal | You need |
 |------|----------|
 | **1551 emulation only** | PCB + required parts below + 16-wire ribbon cable + [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd). No display, no buttons (disk commands only or HDMI+USB keyboard). |
@@ -126,6 +128,7 @@ Count of optional parts in brackets.s
 | R1        | 100-220 Ohm (for LED)                  |    (1)|
 | R2-R10    | 1K-10K Ohm (R2 required; rest optional)|  1+(9)|
 | Q1-Q4     | MMBT3904 / 2N3904 transistors          |    (4) |
+
 
 
 
