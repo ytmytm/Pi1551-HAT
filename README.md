@@ -32,7 +32,7 @@ Firmware: [Pi1551](https://github.com/ytmytm/Pi1551) (branch `pi1551`).
 
 ## Hardware
 
-The [Releases](https://github.com/ytmytm/Pi1551-HAT/releases) section contains all the files you need for manufacturing the populated PCB. That includes Gerber files, BOM with JLCPCB part numbers and SMD part positions.
+The [Releases](https://github.com/ytmytm/Pi1551-HAT/releases) section contains all the files you need for manufacturing the PCB with SMD parts populated. That includes Gerber files, BOM with JLCPCB part numbers and SMD part positions.
 
 - [Schematic PDF](plots/RPi_Hat.pdf)
 - [Gerbers](plots/)
@@ -126,6 +126,7 @@ Count of optional parts in brackets.s
 | R1        | 100-220 Ohm (for LED)                  |    (1)|
 | R2-R10    | 1K-10K Ohm (R2 required; rest optional)|  1+(9)|
 | Q1-Q4     | MMBT3904 / 2N3904 transistors          |    (4) |
+
 
 
 
