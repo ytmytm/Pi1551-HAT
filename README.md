@@ -52,7 +52,7 @@ You can order the PCB with SMD parts pre-populated:
 
 ### Optional: display
 
-- OLED: SSD1306 128×64 or 128×32, or SH1106 128×64 (SH1106 is large - there room for rotary encoder, use 5 buttons instead).
+- OLED: SSD1306 128×64 or 128×32, or SH1106 128×64 (SH1106 is large - there is no room for rotary encoder, use 5 buttons instead).
 - Pinout selectable by solder jumpers: GND/VCC/SCL/SCL (default) or VCC/GND/SCL/SCL.
 
 ### Optional: drive LED
@@ -124,4 +124,5 @@ Count of optional parts in brackets.s
 | R1        | 100-220 Ohm (for LED)                  |    (1)|
 | R2-R10    | 1K-10K Ohm (R2 required; rest optional)|  1+(9)|
 | Q1-Q4     | MMBT3904 / 2N3904 transistors          |    (4) |
+
 
