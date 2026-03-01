@@ -52,7 +52,7 @@ You can order the PCB with SMD parts pre-populated:
 
 ### Optional: display
 
-- OLED: SSD1306 128×64 or 128×32, or SH1106 128×64 (SH1106 is large - no room for rotary encoder).
+- OLED: SSD1306 128×64 or 128×32, or SH1106 128×64 (SH1106 is large - there room for rotary encoder, use 5 buttons instead).
 - Pinout selectable by solder jumpers: GND/VCC/SCL/SCL (default) or VCC/GND/SCL/SCL.
 
 ### Optional: drive LED
@@ -66,7 +66,7 @@ You can order the PCB with SMD parts pre-populated:
 ### Optional: controls (pick one set)
 
 - **Option A:** 5× 6×6 mm tact switches (SW1–SW5).
-- **Option B:** 2× tact switches + rotary encoder (ALPS EC11E or KY-040 module).
+- **Option B:** 2× 6×6 mm tact switches (SW4-SW5) + rotary encoder (ALPS EC11E or a KY-040 module).
 
 ### TAP playback
 
@@ -76,14 +76,18 @@ To play TAP files you need:
 - **Connector:** MiniDIN-7 socket (J4) **or** 1×7 pin header (J5) to solder the cable.
 - **Cable:** At least TAP_READ and GND; one end must be Mini-DIN-7 male.
 
+If you intend to solder the cable yourself, the order of signals on J5 is such that it's easy to solder a piece of ribbon cable to a Mini-DIN-7 plug by going around the perimeter (see schematic for both pinouts). 
+
 The rest of the TAP circuit is optional, but recommended:
 
 - **TAP_SENSE** (Q1, R3, R4): lets the computer see “tape PLAY pressed”. If you omit it, close jumper JP1 so SENSE is always active.
-- **MOTOR** (Q3, Q4, etc.): lets the computer control motor line. If you omit it, close JP2 so motor is always enabled (fine for Pi1551). You can also leave all parts in and configure behaviour in the [Pi1551](https://github.com/ytmytm/Pi1551) config.
+- **MOTOR** (Q4, R7, R10): lets the computer control motor line. If you omit it, close JP2 so motor is always enabled (fine for Pi1551).
+
+You can also leave all parts in and configure behaviour in the [Pi1551](https://github.com/ytmytm/Pi1551) config.
 
 *If your Plus/4 has a 6510 CPU swap, it cannot drive the MOTOR line (see [this note](https://hackjunk.com/2017/06/23/commodore-16-plus-4-8501-to-6510-cpu-conversion/)). You can still have MOTOR active all the time via the [Pi1551](https://github.com/ytmytm/Pi1551) configuration file.*
 
-TAP_WRITE is on the PCB for future use when Pi1551 supports tape write.
+**TAP_WRITE** (Q3, R6, R9) is on the PCB for future use when Pi1551 supports tape write.
 
 ## PCB
 
@@ -120,3 +124,4 @@ Count of optional parts in brackets.s
 | R1        | 100-220 Ohm (for LED)                  |    (1)|
 | R2-R10    | 1K-10K Ohm (R2 required; rest optional)|  1+(9)|
 | Q1-Q4     | MMBT3904 / 2N3904 transistors          |    (4) |
+
