@@ -80,6 +80,8 @@ To play TAP files you need:
 - **Connector:** MiniDIN-7 socket (J4) **or** 1×7 pin header (J5) to solder the cable.
 - **Cable:** At least TAP_READ and GND; one end must be Mini-DIN-7 male.
 
+A MiniDin-7 cable from Aliexpress may not fit Plus/4 cassette port because the squared plug won't fit the round hole in Plus/4 case. Just shave off the corners to make it more round. It may not look pretty, but it will work. 
+
 If you intend to solder the cable yourself, the order of signals on J5 is such that it's easy to solder a piece of ribbon cable to a Mini-DIN-7 plug by going around the perimeter (see schematic for both pinouts). 
 
 The rest of the TAP circuit is optional, but recommended:
@@ -128,6 +130,7 @@ Count of optional parts in brackets.
 | R1        | 100-220 Ohm (for LED)                  |    (1)|
 | R2-R10    | 1K-10K Ohm (R2 required; rest optional)|  1+(9)|
 | Q1-Q4     | MMBT3904 / 2N3904 transistors          |    (4) |
+
 
 
 
