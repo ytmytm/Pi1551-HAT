@@ -1,17 +1,17 @@
 
-(rules PCB RPi_Hat
+(rules PCB RPi_Hat.dsn
   (snap_angle 
     fortyfive_degree
   )
   (autoroute_settings
-    (fanout on)
+    (fanout off)
     (autoroute on)
     (postroute on)
     (vias on)
-    (via_costs 1)
+    (via_costs 5)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1467)
+    (start_pass_no 1)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -29,9 +29,8 @@
     (width 250.0)
     (clearance 200.0)
     (clearance 125.0 (type smd_to_turn_gap))
-    (clearance 200.0 (type smd))
+    (clearance 50.0 (type smd))
     (clearance 200.0 (type "kicad_default"))
-    (clearance 200.0 (type kicad))
   )
   (padstack "Via[0-1]_600:400_um"
     (shape

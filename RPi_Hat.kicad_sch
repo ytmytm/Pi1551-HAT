@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Pi1551 Hat")
-		(date "2026-02-01")
-		(rev "3")
+		(date "2026-03-10")
+		(rev "4")
 		(company "YTM Enterprises")
 		(comment 1 "Maciej Witkowiak <ytm@elysium.pl>")
 	)
@@ -9080,6 +9080,17 @@
 		)
 		(uuid "5ba41baa-e419-4785-94eb-88c3ffa5c834")
 	)
+	(text "Pullups required on\nall TCBM lines"
+		(exclude_from_sim no)
+		(at 127.508 84.836 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left)
+		)
+		(uuid "78671138-6bbf-40aa-8980-31900f4ca14a")
+	)
 	(text "JP1\n1-2: CAS_SENSE driven by Pi1551\n2-3: CAS_SENSE always enabled\n    (resistors and transistor optional)"
 		(exclude_from_sim no)
 		(at 206.756 46.736 0)
@@ -9165,10 +9176,22 @@
 		(uuid "fe606f01-b48c-41b3-a773-6579fb770a48")
 	)
 	(junction
+		(at 140.97 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "004194e0-40ec-4ded-8c12-56cbf86b00f2")
+	)
+	(junction
 		(at 118.11 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "00a4ffae-473c-4d71-baf3-0385fe8516a6")
+	)
+	(junction
+		(at 140.97 48.895)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09f94354-5877-4507-b9a5-7e66e4c0c7be")
 	)
 	(junction
 		(at 196.85 58.42)
@@ -9195,6 +9218,18 @@
 		(uuid "24f184a6-16a4-45d1-af0d-aac57b2e9bd6")
 	)
 	(junction
+		(at 140.97 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "284a972b-caeb-431e-a200-1de37c026b0a")
+	)
+	(junction
+		(at 140.97 75.565)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e6da2ba-98fc-4156-8d7e-942e08cb9d95")
+	)
+	(junction
 		(at 19.05 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9213,10 +9248,22 @@
 		(uuid "3fdc12b9-40f0-4b7d-82a4-0186d54b5201")
 	)
 	(junction
+		(at 140.97 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54936e2b-8c34-4354-936b-9b8fbdc7f366")
+	)
+	(junction
 		(at 256.54 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5dce2667-38b1-4188-9443-d9b2e5d18397")
+	)
+	(junction
+		(at 140.97 40.005)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60f294d5-593b-40f1-aaa7-ee2542bcbb64")
 	)
 	(junction
 		(at 95.25 52.07)
@@ -9267,10 +9314,22 @@
 		(uuid "860a1b49-7c5e-49ce-95ba-82d4621fba50")
 	)
 	(junction
+		(at 140.97 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "897ca06f-f15e-485e-bfc3-e057e79f4c3c")
+	)
+	(junction
 		(at 256.54 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8bb3ea4c-1f46-4185-8f69-fecc5f067980")
+	)
+	(junction
+		(at 140.97 57.785)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ddaaa2c-5326-4b1e-998c-9924001a7854")
 	)
 	(junction
 		(at 95.25 69.85)
@@ -9279,16 +9338,40 @@
 		(uuid "a1557c63-64c8-4136-a805-f94b40d2ba85")
 	)
 	(junction
+		(at 140.97 66.675)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8de3529-a87e-409e-b03d-5aa79442d9d8")
+	)
+	(junction
+		(at 140.97 31.115)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad0cf5c9-f2a9-431d-a2fc-9f27d32bfb5f")
+	)
+	(junction
 		(at 22.86 168.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b0021c65-6c62-484d-b64e-587cae936191")
 	)
 	(junction
+		(at 140.97 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c829cf19-5c31-48b1-ae7b-01d5f8b06f70")
+	)
+	(junction
 		(at 125.73 163.195)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cfc4b501-ff57-4152-8a84-4dedf9d7ad62")
+	)
+	(junction
+		(at 140.97 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5a66db8-78c5-4761-a897-09f7f1bf6f97")
 	)
 	(junction
 		(at 41.91 124.46)
@@ -9364,6 +9447,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 80.01) (xy 140.97 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "074bd801-f53a-4285-9410-4ee72aa9e236")
+	)
+	(wire
+		(pts
 			(xy 186.69 87.63) (xy 214.63 87.63)
 		)
 		(stroke
@@ -9424,6 +9517,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 62.23) (xy 140.97 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f5e2d6f-ec24-419f-a70c-7b59affb17d5")
+	)
+	(wire
+		(pts
 			(xy 256.54 55.88) (xy 256.54 58.42)
 		)
 		(stroke
@@ -9441,6 +9544,16 @@
 			(type default)
 		)
 		(uuid "13a79448-375c-4542-b3b3-7335ab0c84b0")
+	)
+	(wire
+		(pts
+			(xy 140.97 53.34) (xy 140.97 48.895)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14ec53c3-9944-48a9-bf81-9a445839518f")
 	)
 	(polyline
 		(pts
@@ -9514,6 +9627,26 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 57.785) (xy 140.97 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "224dbbf7-36d8-4311-962c-5472c8082712")
+	)
+	(wire
+		(pts
+			(xy 140.97 26.67) (xy 140.97 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24d6b1be-21d5-4419-93e7-85dce55ca6bf")
+	)
+	(wire
+		(pts
 			(xy 246.38 106.68) (xy 248.92 106.68)
 		)
 		(stroke
@@ -9521,6 +9654,16 @@
 			(type default)
 		)
 		(uuid "2725fc12-7e43-49cb-8819-3fedfa6955a3")
+	)
+	(wire
+		(pts
+			(xy 138.43 44.45) (xy 140.97 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28330cfc-87ac-49c9-9c77-ae09753f4339")
 	)
 	(wire
 		(pts
@@ -9564,6 +9707,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 66.675) (xy 140.97 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f2ece3a-d3b4-4626-85a9-8201bca56527")
+	)
+	(wire
+		(pts
 			(xy 256.54 99.06) (xy 256.54 101.6)
 		)
 		(stroke
@@ -9571,6 +9724,16 @@
 			(type default)
 		)
 		(uuid "2f855fb0-3d87-426f-a82f-a208fa50f475")
+	)
+	(wire
+		(pts
+			(xy 140.97 44.45) (xy 140.97 40.005)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3194ccc6-ea92-4584-91bc-dd6285cd3d9a")
 	)
 	(wire
 		(pts
@@ -9584,6 +9747,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 31.115) (xy 140.97 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3434bf5a-66e2-4527-9038-69b3c71b5343")
+	)
+	(wire
+		(pts
 			(xy 149.225 160.655) (xy 156.845 160.655)
 		)
 		(stroke
@@ -9591,6 +9764,16 @@
 			(type default)
 		)
 		(uuid "348ac93d-67bb-4729-857f-b671148c2cfe")
+	)
+	(wire
+		(pts
+			(xy 138.43 48.895) (xy 140.97 48.895)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3493f83d-bd7d-4502-b9f0-d98374502d05")
 	)
 	(polyline
 		(pts
@@ -9601,6 +9784,16 @@
 			(type dash)
 		)
 		(uuid "386f4890-d5fd-4b30-a894-4fb5678e5ba1")
+	)
+	(wire
+		(pts
+			(xy 140.97 62.23) (xy 140.97 57.785)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b2d98c5-7db8-468c-bc19-903d263f1ba9")
 	)
 	(wire
 		(pts
@@ -9694,6 +9887,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 57.785) (xy 140.97 57.785)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4eaa9cc6-45bc-48ee-843a-ee84d0e954e9")
+	)
+	(wire
+		(pts
 			(xy 19.05 39.37) (xy 31.75 39.37)
 		)
 		(stroke
@@ -9711,6 +9914,16 @@
 			(type default)
 		)
 		(uuid "5702d8ba-e77e-4273-9aad-9ee2118f6fdf")
+	)
+	(wire
+		(pts
+			(xy 140.97 35.56) (xy 140.97 31.115)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59d5d7d1-6182-4128-949c-a8b0f7a527cf")
 	)
 	(wire
 		(pts
@@ -9804,6 +10017,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 71.12) (xy 140.97 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6952fa2b-4264-4aaf-91d6-b28a97bfe6b4")
+	)
+	(wire
+		(pts
 			(xy 16.51 29.21) (xy 16.51 49.53)
 		)
 		(stroke
@@ -9832,6 +10055,16 @@
 		)
 		(uuid "6a888b43-cf49-4285-9cfa-28733583a90f")
 	)
+	(wire
+		(pts
+			(xy 138.43 35.56) (xy 140.97 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e99c610-56b3-4471-87fc-d4ffb67e4935")
+	)
 	(polyline
 		(pts
 			(xy 158.115 132.715) (xy 158.115 15.24)
@@ -9841,6 +10074,16 @@
 			(type dash)
 		)
 		(uuid "6f289bc1-fff8-42d0-b430-0b7a0b2087c1")
+	)
+	(wire
+		(pts
+			(xy 140.97 48.895) (xy 140.97 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73502361-aa71-46c8-a60f-180dd07bc931")
 	)
 	(wire
 		(pts
@@ -9854,6 +10097,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 71.12) (xy 140.97 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a37cd39-b49b-457b-9713-5d4d1d464bc9")
+	)
+	(wire
+		(pts
 			(xy 196.85 69.85) (xy 196.85 72.39)
 		)
 		(stroke
@@ -9861,6 +10114,16 @@
 			(type default)
 		)
 		(uuid "7c8cdf23-ef09-48c7-9028-222de3f9f883")
+	)
+	(wire
+		(pts
+			(xy 138.43 31.115) (xy 140.97 31.115)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "820e77e5-941f-42fe-ae3c-7ea249422497")
 	)
 	(wire
 		(pts
@@ -9901,6 +10164,16 @@
 			(type default)
 		)
 		(uuid "864eb69c-0f30-46ce-aae5-91231e44435f")
+	)
+	(wire
+		(pts
+			(xy 138.43 66.675) (xy 140.97 66.675)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86e31ac3-d43b-44d3-a4b7-a8e4038488cc")
 	)
 	(wire
 		(pts
@@ -9951,6 +10224,26 @@
 			(type default)
 		)
 		(uuid "994aa93f-d7aa-4204-a254-b90dc7eec624")
+	)
+	(wire
+		(pts
+			(xy 138.43 40.005) (xy 140.97 40.005)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "997f526f-583a-4500-9764-6795f1efb161")
+	)
+	(wire
+		(pts
+			(xy 138.43 75.565) (xy 140.97 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b557242-3f2b-4a83-a9e6-7b21c148f98e")
 	)
 	(wire
 		(pts
@@ -10051,6 +10344,16 @@
 			(type default)
 		)
 		(uuid "a9040d06-b169-421a-a595-8694850a7924")
+	)
+	(wire
+		(pts
+			(xy 140.97 75.565) (xy 140.97 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa7224f2-1748-410b-9e03-0191637bbca9")
 	)
 	(wire
 		(pts
@@ -10254,6 +10557,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 26.67) (xy 140.97 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbc3b588-cc04-4d67-9bb3-de713880c0d9")
+	)
+	(wire
+		(pts
 			(xy 129.54 168.91) (xy 129.54 160.655)
 		)
 		(stroke
@@ -10281,6 +10594,16 @@
 			(type default)
 		)
 		(uuid "d1502228-6896-4c89-922c-60642a89381e")
+	)
+	(wire
+		(pts
+			(xy 138.43 53.34) (xy 140.97 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d28b6de7-9b2a-4c0e-a823-8e5f78cfc080")
 	)
 	(wire
 		(pts
@@ -10341,6 +10664,16 @@
 			(type default)
 		)
 		(uuid "dd7b2baa-3710-4d9d-8387-71973576ac1b")
+	)
+	(wire
+		(pts
+			(xy 140.97 80.01) (xy 140.97 75.565)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddefaee9-0cb2-4083-a129-6aa603597dd7")
 	)
 	(wire
 		(pts
@@ -10441,6 +10774,16 @@
 			(type default)
 		)
 		(uuid "f2a2ae8b-64be-44f2-af15-ede7aa94f23f")
+	)
+	(wire
+		(pts
+			(xy 140.97 40.005) (xy 140.97 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fab84855-4e3d-4c6a-97b0-6311dcebc883")
 	)
 	(wire
 		(pts
@@ -10571,6 +10914,26 @@
 			(justify right bottom)
 		)
 		(uuid "0ebc8de5-6a98-4bde-8a7d-49dafea1f3c5")
+	)
+	(label "DIO4"
+		(at 130.81 40.005 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "12f6627a-0078-448b-b5b2-99421d737d1f")
+	)
+	(label "DEV"
+		(at 130.81 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1644017a-4101-40e1-b9d8-dcd1e9e65da5")
 	)
 	(label "TAP_READ"
 		(at 31.75 72.39 180)
@@ -10762,6 +11125,16 @@
 		)
 		(uuid "51275c4a-5558-4005-8469-222c145515f4")
 	)
+	(label "DAV"
+		(at 130.81 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "541c609b-18e0-4cf4-b32e-a581ddc4e64d")
+	)
 	(label "VCC_5V"
 		(at 186.69 134.62 270)
 		(effects
@@ -10871,6 +11244,16 @@
 			(justify left bottom)
 		)
 		(uuid "69696126-e11e-4749-8685-c564cb70c084")
+	)
+	(label "DIO6"
+		(at 130.81 48.895 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6e6dcc46-7a01-43b0-a661-7a931e4181a9")
 	)
 	(label "IN_SW2"
 		(at 86.36 180.34 0)
@@ -10982,6 +11365,16 @@
 		)
 		(uuid "8b5a0ab5-38b1-4e8f-a2c2-2073ea253676")
 	)
+	(label "STATUS1"
+		(at 130.81 75.565 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8f0b8844-992f-4972-8abd-2bf82aa4f55b")
+	)
 	(label "IN_SW3"
 		(at 86.36 182.88 0)
 		(effects
@@ -11011,6 +11404,16 @@
 			(justify left bottom)
 		)
 		(uuid "9068f6be-4cbd-4f5e-98cb-63e0512fac79")
+	)
+	(label "DIO3"
+		(at 130.81 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "90fe8617-79ec-4eab-a115-2676f3065859")
 	)
 	(label "IN_SW5"
 		(at 36.83 176.53 0)
@@ -11082,6 +11485,16 @@
 		)
 		(uuid "99fdb1a3-1171-49eb-b20f-835d4acaf3a7")
 	)
+	(label "DIO2"
+		(at 130.81 31.115 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9a9bdd19-dca8-449d-88b8-24455e18cbb8")
+	)
 	(label "TAP_MOTOR"
 		(at 31.75 67.31 180)
 		(effects
@@ -11091,6 +11504,16 @@
 			(justify right bottom)
 		)
 		(uuid "9bc38119-60f2-45ad-90f0-f2d69d833318")
+	)
+	(label "DIO8"
+		(at 130.81 57.785 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9dd4a7c7-aadf-4a0f-948b-36c785311017")
 	)
 	(label "CAS_MOTOR"
 		(at 201.93 105.41 0)
@@ -11142,6 +11565,16 @@
 		)
 		(uuid "aca7c585-2d9f-4b42-8d0e-eb21f7741a26")
 	)
+	(label "ACK"
+		(at 130.81 66.675 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ad633483-9949-4bf2-9f69-913c50567245")
+	)
 	(label "VCC_5V"
 		(at 186.69 107.95 180)
 		(effects
@@ -11151,6 +11584,26 @@
 			(justify right bottom)
 		)
 		(uuid "b2fd0573-a11c-4a4e-b94d-f0d106ae4533")
+	)
+	(label "DIO5"
+		(at 130.81 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b71f8b34-1a7f-419f-a5a8-08f8f2df6188")
+	)
+	(label "DIO7"
+		(at 130.81 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b7c609c7-9e8e-4f42-b6ba-7801d8361eeb")
 	)
 	(label "DEV"
 		(at 64.77 101.6 0)
@@ -11282,6 +11735,16 @@
 		)
 		(uuid "ec0d98c9-ef54-4243-8d7f-8cac65bc8ab3")
 	)
+	(label "DIO1"
+		(at 130.81 26.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f46700aa-e14d-4049-bbe1-0a6a558e3e54")
+	)
 	(label "DIO2"
 		(at 80.01 39.37 0)
 		(effects
@@ -11291,6 +11754,16 @@
 			(justify left bottom)
 		)
 		(uuid "f6315cde-52f4-459b-87f5-7d073b5d0250")
+	)
+	(label "STATUS0"
+		(at 130.81 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f686f603-481b-448e-a494-c3478fba2f37")
 	)
 	(label "TAP_READ"
 		(at 232.41 63.5 180)
@@ -12358,6 +12831,102 @@
 	)
 	(symbol
 		(lib_id "Device:R")
+		(at 134.62 71.12 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10c29e24-1abd-469b-a208-00c9c7434fc6")
+		(property "Reference" "R21"
+			(at 133.096 69.088 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 71.12 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 69.342 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5a8f912-a242-4ed8-8e9c-f4e7784a9293")
+		)
+		(pin "2"
+			(uuid "d556da65-14fd-42cd-83b8-6f58a8de3c93")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
 		(at 242.57 63.5 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12518,6 +13087,198 @@
 			(project ""
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 80.01 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1c68627c-e7c5-4d18-a56c-1891137acfdc")
+		(property "Reference" "R23"
+			(at 133.096 77.978 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 80.01 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 78.232 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c269e107-82ca-4d6b-871d-7753c9af1293")
+		)
+		(pin "2"
+			(uuid "e3d0b79b-3235-4374-b1ac-59b4dbb370c5")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 35.56 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2104b37e-17cb-4d27-8f0d-cba217b0e877")
+		(property "Reference" "R13"
+			(at 133.096 33.528 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 35.56 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 33.782 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65071b58-11b0-4c79-b34c-28633e21425c")
+		)
+		(pin "2"
+			(uuid "7baa5312-cd8b-448f-b7f2-71187a207d09")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -12969,6 +13730,102 @@
 			(project ""
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 40.005 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "379c9fd0-4db9-44fe-a6c2-e0c6bdf6c44e")
+		(property "Reference" "R14"
+			(at 133.096 37.973 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 40.005 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 38.227 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 40.005 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 40.005 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 40.005 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 40.005 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0450fb66-3717-4348-bffa-3623ab040b01")
+		)
+		(pin "2"
+			(uuid "fba278d1-0f10-4cad-a23f-83ef5db27907")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -13458,6 +14315,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 134.62 66.675 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5fae6060-699b-41fb-a5fe-1ab4f9192fb6")
+		(property "Reference" "R20"
+			(at 133.096 64.643 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 66.675 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 64.897 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 66.675 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 66.675 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 66.675 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 66.675 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "734cf4b1-42cd-45bd-bbe8-5df722811629")
+		)
+		(pin "2"
+			(uuid "7c5a0611-d463-4878-a9a8-480acd28aedb")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 196.85 72.39 0)
 		(unit 1)
@@ -13527,6 +14480,102 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 53.34 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "62eded31-43e6-417b-ab28-05307287b838")
+		(property "Reference" "R17"
+			(at 133.096 51.308 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 53.34 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 51.562 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 53.34 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d9a1014-6fc5-4298-8ec5-4dc5de1ca22b")
+		)
+		(pin "2"
+			(uuid "24a1adc3-7d72-4cee-9e6c-cc4de32722ab")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -14259,6 +15308,198 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 134.62 26.67 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8d886e69-bf05-4d8c-93ab-90f6efa04ef9")
+		(property "Reference" "R11"
+			(at 133.096 24.638 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 26.67 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 24.892 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "98995f2a-5ce2-40ba-a180-2a6f5b55cfc7")
+		)
+		(pin "2"
+			(uuid "7ea7e55d-fdbe-4dda-ad55-22c731683373")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 44.45 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8e38345e-4039-47b4-b6da-be29d4295f89")
+		(property "Reference" "R15"
+			(at 133.096 42.418 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 44.45 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 42.672 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83015628-dc58-46cd-bcb3-dc92b025f357")
+		)
+		(pin "2"
+			(uuid "66baf5a9-abe9-461d-90eb-77fe6e43de35")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Mechanical:MountingHole")
 		(at 199.39 161.29 0)
 		(unit 1)
@@ -14533,6 +15774,72 @@
 			(project ""
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 140.97 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa0242a2-485e-4247-8876-db0703aeb669")
+		(property "Reference" "#PWR09"
+			(at 140.97 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 140.97 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 140.97 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 140.97 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7c09ca7-525d-4e08-992a-79b413ae989e")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -15165,6 +16472,102 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 134.62 75.565 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c5db1571-67ec-424b-8180-1c25a1475058")
+		(property "Reference" "R22"
+			(at 133.096 73.533 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 75.565 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 73.787 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 75.565 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 75.565 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 75.565 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 75.565 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "459eff64-64f1-4e64-a622-949017d24a0c")
+		)
+		(pin "2"
+			(uuid "0997f70c-b87a-4619-b83d-9060b4929424")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:MMBT3904")
 		(at 254 147.32 0)
 		(unit 1)
@@ -15461,6 +16864,102 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 57.785 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "dd71403d-1e89-4168-b8e8-a5d6188b5888")
+		(property "Reference" "R18"
+			(at 133.096 55.753 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 57.785 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 56.007 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 57.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 57.785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 57.785 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 57.785 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 57.785 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79e7a891-fa04-48d1-b3a6-d823cb84f9e0")
+		)
+		(pin "2"
+			(uuid "9a1cbf87-bad7-4d2b-9325-39afd6880e85")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -15830,6 +17329,198 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 134.62 31.115 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ea10387c-dc53-42ce-a2b8-02281f4bdef9")
+		(property "Reference" "R12"
+			(at 133.096 29.083 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 31.115 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 29.337 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 31.115 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 31.115 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 31.115 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 31.115 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "178d73b2-7520-4f49-9331-df5823f238ec")
+		)
+		(pin "2"
+			(uuid "2a672457-64a9-4766-bea0-064e59f26fb1")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 62.23 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ec52d8b1-dd13-4940-97ba-b9232d020aab")
+		(property "Reference" "R19"
+			(at 133.096 60.198 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 62.23 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 60.452 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d9441840-7d2a-4c68-9e67-ecde380cc02b")
+		)
+		(pin "2"
+			(uuid "39290ee3-d8a9-43ae-be22-2e462aad4a5a")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 256.54 156.21 0)
 		(unit 1)
@@ -16036,6 +17727,102 @@
 			(project "RPi_Hat"
 				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 134.62 48.895 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fca8c0bf-28bf-49d9-9026-ef942d25cf97")
+		(property "Reference" "R16"
+			(at 133.096 46.863 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 133.35 48.895 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 134.62 47.117 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 134.62 48.895 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB Part #" "C22356686"
+			(at 134.62 48.895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR.Part #" "RCA0510KFLF"
+			(at 134.62 48.895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB URL" "https://jlcpcb.com/partdetail/23790130-RCA0510KFLF/C22356686"
+			(at 134.62 48.895 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7dba095-b7fa-40ea-b567-c56b258b0264")
+		)
+		(pin "2"
+			(uuid "778f5d7c-738f-4c9f-9e0c-b66d041f8e7f")
+		)
+		(instances
+			(project "RPi_Hat"
+				(path "/4927a000-c5a8-447d-b588-c261bcd5af28"
+					(reference "R16")
 					(unit 1)
 				)
 			)

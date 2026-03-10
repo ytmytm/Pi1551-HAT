@@ -47,6 +47,7 @@ The [Releases](https://github.com/ytmytm/Pi1551-HAT/releases) section contains a
 - 2×8 (16-pin) male IDC connector for ribbon cable to [tcbm2sd](https://github.com/ytmytm/plus4-tcbm2sd)
 - D2: Schottky diode (BAT54, BAS40, BAT43 or 1N5819) — protects the Pi
 - R2: 10K resistor (with D2)
+- R11-23: 13×10K resistors (TCBM pullups)
 
 Plus a **straight 16-wire ribbon cable**. Connections are 1:1; both ends must be crimped the same way. I recommend crimping the cable the same way as in the photo above, with both connectors identical — it makes cable routing easier on both ends.
 
@@ -105,7 +106,7 @@ Don't be afraid of SMD parts, I have used larger footprints that are more friend
 
 Note the D2 diode orientation - the stripe is on the same side as the closed silkscreen, towards the TCBM connector. 
 
-For convenience, the majority of resistors (R2-R10) are all the same. Use any value in the 1K-10K range you have at hand.
+For convenience, the majority of resistors (R2-R23) are all the same. Use any value in the 1K-10K range you have at hand.
 
 You might find that soldering those four SMD transistors, ten resistors and one diode is faster than their THT counterparts.
 
@@ -128,7 +129,7 @@ Count of optional parts in brackets.
 | D1        | 3mm / 5mm LED (e.g. red for authenticity)               |    (1)|
 | D2        | Schottky diode: BAT54, 1n5819, BAT43, etc. |    1 |
 | R1        | 100-220 Ohm (for LED)                  |    (1)|
-| R2-R10    | 1K-10K Ohm (R2 required; rest optional)|  1+(9)|
+| R2-R23    | 1K-10K Ohm (R2 required; rest optional)|  14+(8)|
 | Q1-Q4     | MMBT3904 / 2N3904 transistors          |    (4) |
 
 
